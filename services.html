@@ -45,15 +45,15 @@
         }
 
         .line {
-            width: 33%;
-            height: 4px;
+            width: 50%;
+            height: 3px;
             background-color: black;
             margin: 40px auto;
         }
 
         .bold-line {
             width: 100%;
-            height: 4px;
+            height: 3px;
             background-color: black;
             margin: 20px 0;
         }
@@ -94,7 +94,7 @@
             padding: 10px;
             position: fixed;
             right: 20px;
-            top: 20px;
+            top: 10px;
             z-index: 1000;
         }
 
@@ -119,7 +119,7 @@
         }
 
         nav a {
-            padding: 10px;
+            padding: 5px;
             font-size: 1.0em;
             color: white;
             text-decoration: none;
@@ -135,6 +135,22 @@
                 display: flex;
             }
         }
+        .learn-more-btn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.0em;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #333;
+}
+
     </style>
 </head>
 
@@ -191,14 +207,12 @@
         <li><span class="bold">Late Fees:</span> $50 (paid by the tenant).</li>
         <li><span class="bold">Tenant Retention:</span> Proven strategies to reduce vacancies and retain quality tenants.</li>
     </ul>
-
     <h3>2. Leasing Only Services</h3>
     <p>For owners who need tenant placement:</p>
     <ul>
         <li><span class="bold">Leasing and Listings:</span> Property listing and tenant placement for half a month’s rent.</li>
         <li><span class="bold">Tenant Screening:</span> Comprehensive background checks to ensure quality tenants.</li>
     </ul>
-
     <h3>3. Property Inspections</h3>
     <p>Protect your investment with detailed property inspections:</p>
     <ul>
@@ -208,8 +222,7 @@
         <li><span class="bold">Over 2500 sqf:</span> $900.</li>
         <p>Includes same day reports</p>
     </ul>
-</div>
-        
+    </div>  
     <div class="line"></div>
     <br>
     <h2><span class="bold">Subscribe to Smart Property Profits</span>: Your 5-minute brief on Property Investments, Management, and Profits.</h2>
@@ -221,7 +234,10 @@
     <div class="line"></div>
     <p>If you have any questions about our services or how we can assist with your properties or future investments, please reach out to us.</p> 
     <p>We'd love to hear from you and grab a coffee.</p> 
-    <p><a href="mailto:robin@two16.ca">robin@two16.ca</a> | <a href="tel:4037015759">403.701.5759</a></p> 
+    <a href="mailto:robin@two16.ca" class="learn-more-btn">robin@two16.ca</a>
+    <a href="tel:403701575" class="learn-more-btn">403.701.575</a>
+    <br>
+    <br>
     <p><strong>Robin Bauer</strong><br>Owner - Two 16</p>
 </body>
 </html>

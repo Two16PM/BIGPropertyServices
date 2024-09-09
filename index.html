@@ -85,7 +85,8 @@
         .center-container {
             text-align: center;
         }
-       /* Hamburger menu styling */
+
+        /* Hamburger menu styling */
         .hamburger-menu {
             display: flex;
             flex-direction: column;
@@ -134,80 +135,106 @@
                 display: flex;
             }
         }
+
         .learn-more-btn {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.0em;
-    transition: background-color 0.3s ease;
-}
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.0em;
+            transition: background-color 0.3s ease;
+        }
 
-.learn-more-btn:hover {
-    background-color: #333;
-}
+        .learn-more-btn:hover {
+            background-color: #333;
+        }
 
-.column-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
+        .column-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
 
-.property-management {
-    text-align: center;
-    margin-bottom: 20px;
-}
+        .property-management {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.property-management ul {
-    text-align: center;
-    padding-left: 0;
-}
+        .property-management ul {
+            text-align: center;
+            padding-left: 0;
+        }
 
-.sub-column-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 20px;
-}
+        .sub-column-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 20px;
+        }
 
-.sub-column {
-    flex: 1;
-    max-width: 400px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
-.letter-container {
-    max-width: 800px;    /* Set a maximum width */
-    margin: 0 auto;      /* Center the container */
-    padding: 0 20px;     /* Add horizontal padding */
-}
-.sub-column h4 {
-    margin-top: 0;
-}
-        
-/* Styles for mobile devices */
-@media (max-width: 768px) {
-    .services-container {
-        flex-wrap: wrap; /* Allows wrapping on smaller screens */
-        flex-direction: column; /* Stack columns vertically */
-    }
+        .sub-column {
+            flex: 1;
+            max-width: 400px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
 
-    .service {
-        flex: 1 1 100%; /* Columns take up 100% of the width */
-        margin-bottom: 20px; /* Add spacing between stacked columns */
-        padding: 15px; /* Reduced padding for mobile */
-    }
-    
-    body {
-        padding: 0 10px 10px 10px; /* Reduce padding on mobile for the whole body */
-    }
-}        
+        .letter-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .sub-column h4 {
+            margin-top: 0;
+        }
+
+        /* Styles for mobile devices */
+        @media (max-width: 768px) {
+            .services-container {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .service {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+                padding: 15px;
+            }
+
+            body {
+                padding: 0 10px 10px 10px;
+            }
+        }
+
+        /* Apply 3-column layout styling to the 2-column section */
+        .sub-column-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .sub-column {
+            flex: 1 1 45%; /* Adjusted width for two-column layout */
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            .sub-column {
+                flex: 1 1 100%;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 

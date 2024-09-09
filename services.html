@@ -152,6 +152,32 @@
             background-color: #333;
         }
 
+        /* Flexbox styling for three-column layout */
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .service {
+            flex: 0 1 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .service p, .service ul {
+            font-size: 1em;
+        }
     </style>
 </head>
 
@@ -195,49 +221,43 @@
         <p style="font-size: 1.5em;">Our Services for Your Investment Property</p>
         <p>At Two 16, we provide a personalized and proactive approach to property management, ensuring that your investment is managed with the utmost care and efficiency. Our services are designed to simplify property ownership and enhance the value of your investments, with a focus on personalized service, proactive management, and transparent pricing.</p>
 
-        <h3>1. Full-Service Property Management</h3>
-        <p>Our comprehensive management service is tailored to meet your specific needs, ensuring that every aspect of your property is handled with care:</p>
-        <ul>
-            <li><span class="bold">Customized Property Management:</span> Experience hands-on management that treats your property as if it were our own.</li>
+        <!-- Services Section in 3 Columns -->
+        <div class="services-container">
+            <div class="service">
+                <h3>1. Full-Service Property Management</h3>
+                <p>Our comprehensive management service is tailored to meet your specific needs, ensuring that every aspect of your property is handled with care:</p>
                 <ul>
+                    <li><span class="bold">Customized Property Management:</span> Experience hands-on management that treats your property as if it were our own.</li>
                     <li><span class="bold">Monthly Management:</span> 10% of rental income.</li>
                     <li><span class="bold">Setup Fee:</span> $300 one-time, with a personalized onboarding process.</li>
-                    <li><span class="bold">Leasing and Listings:</span> Tenant placement and property listing for half a month’s rent, using targeted marketing strategies.</li>
-                    <li><span class="bold">Lease Renewals:</span> $200 per renewal, including proactive lease renewal strategies to retain quality tenants.</li>
-                    <li><span class="bold">Maintenance:</span> 10% management fee for repairs and scheduled upkeep based on your approval, with a focus on preventative maintenance to avoid costly repairs.</li>
-                    <li><span class="bold">Rent Collection & Accounting:</span> Seamless rent collection and transparent financial reporting.</li>
-                    <li><span class="bold">Evictions:</span> No additional eviction fees, handled with expertise to minimize disruption.</li>
-                    <li><span class="bold">Late Fees:</span> $50 (paid by the tenant).</li>
-                    <li><span class="bold">Tenant Retention:</span> Proven strategies and strong communication to reduce vacancies and retain high-quality tenants.</li>
+                    <li><span class="bold">Leasing and Listings:</span> Tenant placement and property listing for half a month’s rent.</li>
+                    <li><span class="bold">Maintenance:</span> 10% fee for repairs and upkeep with your approval.</li>
+                    <li><span class="bold">Evictions:</span> No additional eviction fees.</li>
                 </ul>
-            </li>
-        </ul>
+            </div>
 
-        <h3>2. Leasing Only Services</h3>
-        <p>For property owners who prefer to manage their properties themselves but need expert tenant placement:</p>
-        <ul>
-            <li><span class="bold">Targeted Tenant Placement:</span> Property listing and tenant placement for half a month’s rent, with a focus on finding the right tenant for your property.</li>
-            <li><span class="bold">Comprehensive Tenant Screening:</span> In-depth background checks to ensure that you attract reliable and responsible tenants.</li>
-        </ul>
+            <div class="service">
+                <h3>2. Leasing Only Services</h3>
+                <p>For property owners who prefer to manage their properties themselves but need expert tenant placement:</p>
+                <ul>
+                    <li><span class="bold">Targeted Tenant Placement:</span> Property listing and tenant placement for half a month’s rent.</li>
+                    <li><span class="bold">Comprehensive Tenant Screening:</span> In-depth background checks to ensure reliable tenants.</li>
+                </ul>
+            </div>
 
-        <h3>3. Property Inspections</h3>
-        <p>Ensure your investment is well-protected with our detailed inspection services:</p>
-        <ul>
-            <li><span class="bold">Thorough Property Assessments:</span> Our inspections help identify potential issues and ensure your property is in top condition.</li>
+            <div class="service">
+                <h3>3. Property Inspections</h3>
+                <p>Ensure your investment is well-protected with our detailed inspection services:</p>
                 <ul>
-                    <li><span class="bold">Pre-Purchase Inspections:</span> Detailed inspections before buying a property, providing peace of mind and informed decision-making.</li>
-                    <li><span class="bold">Turnover Inspections:</span> Conducted during tenant turnovers or as needed for property assessment, to ensure the property is well-maintained.</li>
+                    <li><span class="bold">Thorough Property Assessments:</span> Identify potential issues and ensure your property is in top condition.</li>
+                    <li><span class="bold">Pre-Purchase Inspections:</span> Detailed inspections before buying a property.</li>
+                    <li><span class="bold">Turnover Inspections:</span> Ensure the property is well-maintained during tenant turnovers.</li>
+                    <li><span class="bold">Same-Day Reports:</span> Receive timely, detailed reports to quickly address any issues.</li>
                 </ul>
-            </li>
-                <ul>
-                    <li><span class="bold">Up to 2500 sq ft:</span> $800.</li>
-                    <li><span class="bold">Over 2500 sq ft:</span> $900.</li>
-                </ul>
-            </li>
-            <li><span class="bold">Same-Day Reports:</span> Receive timely, detailed reports to quickly address any issues.</li>
-        </ul>
-    <br>
-    <div class="line"></div>
+            </div>
+        </div>
+        
+        <div class="line"></div>
     <br>
         <h2><span class="bold">Why Choose Two 16?</span></h2>
         <p>With our unique 5-step system, we provide a personalized, hands-on approach to managing and growing your property investments:</p>

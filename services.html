@@ -179,6 +179,23 @@
         .service p, .service ul {
             font-size: 1em;
         }
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    .services-container {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .service {
+        flex: 1 1 100%; /* Columns take up 100% of the width */
+        margin-bottom: 20px; /* Add spacing between stacked columns */
+        padding: 15px; /* Reduced padding for mobile */
+    }
+    
+    body {
+        padding: 0 10px 10px 10px; /* Reduce padding on mobile for the whole body */
+    }
+}        
     </style>
 </head>
 

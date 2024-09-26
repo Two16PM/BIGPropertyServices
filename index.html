@@ -105,49 +105,6 @@
             background-color: #333;
         }
 
-        .column-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 0;
-        }
-
-        .property-management {
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .property-management ul {
-            text-align: left;
-            padding-left: 0;
-        }
-
-        .sub-column-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            text-align: left;
-            margin-top: 20px;
-        }
-
-        .sub-column {
-            flex: 1;
-            max-width: 400px;
-            margin: 10px;
-            padding: 10px;
-            text-align: left;
-        }
-
-        .letter-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .sub-column h4 {
-            margin-top: 0;
-        }
-
         /* Styles for mobile devices */
         @media (max-width: 768px) {
             .services-container {
@@ -164,22 +121,6 @@
             body {
                 padding: 0 10px 10px 10px;
             }
-        }
-
-        /* Apply 3-column layout styling to the 2-column section */
-        .sub-column-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .sub-column {
-            flex: 1 1 45%; /* Adjusted width for two-column layout */
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #000;
-            border-radius: 10px;
-            background-color: #f9f9f9;
         }
 
         @media (max-width: 768px) {
@@ -199,18 +140,6 @@
         <div class="bold-line"></div>
     </div>
 
-    
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('mobile-menu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-    </script>
 
     <!-- Main Content -->
     <p style="font-size: 1.5em;">Rooted in Calgary, AB, we proudly partner with investors and property owners to drive lasting growth through strategic real estate investments..</p>

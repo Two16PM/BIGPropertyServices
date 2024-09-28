@@ -146,20 +146,23 @@
         .contact-button:hover {
             background-color: #a45c00;
         }
-        
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: left; /* Align footer text to the left */
-            padding: 10px 20px; /* Add padding to the footer */
-            position: relative;
-        }
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: left; /* Align footer text to the left */
+        padding: 10px 20px; /* Add padding to the footer */
+        position: relative;
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Arrange items in a column */
+        align-items: flex-start; /* Align items to the start (left) */
+    }
 
-        .footer p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-
+    .footer p {
+        margin: 5px 0;
+        font-size: 14px;
+        width: 100%; /* Ensure paragraphs take full width */
+        text-align: left; /* Justify text to the left */
+    }
         .footer .highlight-footer {
             color: #ca6f00; /* Gold color for 'B' in BIG */
         }

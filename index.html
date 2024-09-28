@@ -7,6 +7,8 @@
     <link rel="icon" href="big flavicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Same styles from the hero section */
+
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #F5F5F5;
@@ -67,15 +69,127 @@
         .cta-button:hover {
             background-color: #a45c00;
         }
+
+        /* Below the fold styles */
+        .below-the-fold {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            max-width: 900px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        .services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .service-item {
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .service-item p {
+            color: #777;
+        }
+
+        .cta-section {
+            background-color: #ca6f00;
+            padding: 40px 20px;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-section h3 {
+            margin: 0 0 20px 0;
+            font-size: 24px;
+        }
+
+        .cta-section p {
+            margin: 0 0 20px 0;
+            font-size: 18px;
+        }
+
+        .cta-section a {
+            background-color: white;
+            color: #ca6f00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-section a:hover {
+            background-color: #f5f5f5;
+        }
+
     </style>
 </head>
 <body>
+    <!-- Hero Section -->
     <div class="hero-section">
         <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
         <h1><span class="highlight">Invest Boldly.</span> Build Big.</h1>
         <h2>Discover off-market property deals in Calgary that others miss.</h2>
         <p>We specialize in finding hidden gems and turning them into high-value investments. Whether you’re an investor ready to flip or a developer looking to create something new, we deliver the deals that drive your success.</p>
         <a href="#contact" class="cta-button">Get Your Next Big Deal</a>
+    </div>
+
+    <!-- Below the Fold Section -->
+    <div class="below-the-fold">
+        <!-- About Us -->
+        <div class="section-content">
+            <h2 class="section-title">About BIG Property Services</h2>
+            <p>Born in Calgary, AB, BIG Property Services is built on a foundation of trust, integrity, and a commitment to delivering exceptional results. We connect investors and developers with high-potential properties, turning hidden opportunities into profitable realities.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services">
+            <h2 class="section-title">What We Do</h2>
+            <div class="service-item">
+                <h3>Finding Off-Market Deals</h3>
+                <p>We specialize in sourcing off-market properties that offer incredible potential for investment and development. Our network and expertise allow us to uncover hidden gems that others miss.</p>
+            </div>
+            <div class="service-item">
+                <h3>Investor Partnerships</h3>
+                <p>We partner with investors to deliver properties that align with their goals, whether it’s for a quick flip or a long-term investment. Our hands-on management ensures transparency and maximized returns.</p>
+            </div>
+            <div class="service-item">
+                <h3>Developer Collaborations</h3>
+                <p>We work closely with developers, either by delivering the right deal or partnering to transform a property into something extraordinary. Our collaborative approach helps bring ambitious projects to life.</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h3>Ready to Invest? Let’s Build Something Big Together.</h3>
+            <p>Connect with us today and discover how we can help you unlock the full potential of your next property investment.</p>
+            <a href="#contact">Contact Us</a>
+        </div>
     </div>
 </body>
 </html>

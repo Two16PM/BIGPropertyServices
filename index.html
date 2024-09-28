@@ -68,6 +68,22 @@
             background-color: #a45c00;
         }
 
+        .value-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .value-column {
+            flex: 1;
+            margin: 0 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
         .footer {
             background-color: #333;
             color: white;
@@ -84,16 +100,6 @@
         .footer .highlight-footer {
             color: #ca6f00; /* Gold color for 'B' in BIG */
         }
-
-        .content-section {
-            text-align: center; /* Centers the text */
-            padding: 40px 20px;
-        }
-
-        .content-section h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
@@ -105,15 +111,19 @@
         <a href="#contact" class="cta-button">Get Your Next Big Deal</a>
     </div>
 
-    <div class="content-section">
-        <h3>At BIG Property Services, we prioritize building strong relationships with our investors and developers.</h3>
-        <p>Our specialty lies in sourcing off-market deals that align with your investment goals. We offer two primary ways to work together:</p>
-        <ul style="list-style: none; padding: 0;">
-            <li>1. We bring you the best deals, tailored to your specific requirements.</li>
-            <li>2. We partner with you on projects, providing hands-on management to maximize your returns.</li>
-        </ul>
-        <h3>Let’s grab a coffee and talk about your vision.</h3>
-        <p>We’re committed to open communication and transparency, ensuring you feel informed and confident throughout the process. Whether you’re an investor looking for the next flip or a developer wanting to create something extraordinary, we’re here to help you realize your property ambitions. Get in touch, and let’s start building together!</p>
+    <div class="value-section">
+        <div class="value-column">
+            <h3>Find Hidden Deals</h3>
+            <p>We source off-market properties at great prices, ensuring you have access to exclusive opportunities that others may miss.</p>
+        </div>
+        <div class="value-column">
+            <h3>Partnership Opportunities</h3>
+            <p>We partner with investors and developers to maximize project potential, whether through hands-on management or collaboration on exciting developments.</p>
+        </div>
+        <div class="value-column">
+            <h3>Tailored Solutions</h3>
+            <p>Our deep relationships with our clients allow us to understand your unique needs, providing you with tailored deals that align with your goals.</p>
+        </div>
     </div>
 
     <div class="footer">

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,248 +8,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F5F5F5;
             margin: 0;
             padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.5;
-            padding: 0 100px 20px 100px;
-            background-color: #F5F5F5;
         }
 
-        h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-
-        h2 {
-            font-size: 2.0em;
-            font-weight: normal;
-            margin: 20px 0 20px 0;
-        }
-
-        .bold {
-            font-weight: bold;
-        }
-
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .spacer {
-            margin: 20px 0;
-        }
-
-        .line {
-            width: 50%;
-            height: 3px;
-            background-color: black;
-            margin: 40px auto;
-        }
-
-        .bold-line {
-            width: 100%;
-            height: 3px;
-            background-color: black;
-            margin: 20px 0;
-        }
-
-        p {
-            margin: 0 0 15px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #000000;
-        }
-
-        h3 {
-            margin: 30px 0 15px 0;
-        }
-
-        h4 {
-            text-decoration: underline;
-            margin: 20px 0 10px 0;
-        }
-
-        .logo {
-            display: block;
-            max-height: 300px;
-            margin: 20px auto;
-        }
-
-        .center-container {
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
-        }
-
-
-        .learn-more-btn {
-            display: inline-block;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.0em;
-            transition: background-color 0.3s ease;
-        }
-
-        .learn-more-btn:hover {
-            background-color: #333;
-        }
-
-        .letter-container {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 0 20px;
         }
 
-        .sub-column h4 {
-            margin-top: 0;
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
         }
 
-        /* Styles for mobile devices */
-        @media (max-width: 768px) {
-            .services-container {
-                flex-wrap: wrap;
-                flex-direction: column;
-            }
-
-            .service {
-                flex: 1 1 100%;
-                margin-bottom: 20px;
-                padding: 15px;
-            }
-
-            body {
-                padding: 0 10px 10px 10px;
-            }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #333;
         }
 
-        /* Apply 3-column layout styling to the 2-column section */
-        .sub-column-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+        .highlight {
+            color: #ca6f00; /* Gold color for 'B' in BIG */
         }
 
-        .sub-column {
-            flex: 1 1 45%; /* Adjusted width for two-column layout */
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #000;
-            border-radius: 10px;
-            background-color: #f9f9f9;
+        h2 {
+            font-size: 24px;
+            margin: 10px 0 30px 0;
+            color: #555;
         }
 
-        @media (max-width: 768px) {
-            .sub-column {
-                flex: 1 1 100%;
-                margin-bottom: 20px;
-            }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #777;
+            max-width: 700px;
+        }
+
+        .cta-button {
+            background-color: #ca6f00;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #a45c00;
         }
     </style>
 </head>
-
 <body>
-    <div class="center-container">
-        <a href="index.html">
-            <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
-        </a>
-        <div class="bold-line"></div>
+    <div class="hero-section">
+        <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
+        <h1><span class="highlight">Invest Boldly.</span> Build Big.</h1>
+        <h2>Discover off-market property deals in Calgary that others miss.</h2>
+        <p>We specialize in finding hidden gems and turning them into high-value investments. Whether you’re an investor ready to flip or a developer looking to create something new, we deliver the deals that drive your success.</p>
+        <a href="#contact" class="cta-button">Get Your Next Big Deal</a>
     </div>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('mobile-menu');
-            if (menu.style.display === 'flex') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'flex';
-            }
-        }
-    </script>
-
-    <!-- Main Content -->
-    <p style="font-size: 1.8em;">Born in Calgary, AB, <strong><span style="color: #ca6f00;">B</span>IG</strong> is focused on delivering big results.</p>
-    <p style="font-size: 1.5em;">We work with investors to find high-potential properties and deliver maximum returns through active, hands-on management. With full transparency, you'll get regular updates, reports, and clear insights every step of the way.</p>
-    <br>
-    <br>
-    <div class="letter-container">
-    <h1><span style="color: #ca6f00;">A Letter to Our Investors</span></h1>
-
-    <p><strong>Dear Investor,</strong></p>
-
-    <p>We’re thrilled to introduce you to <strong>BIG Property Services</strong> dedicated to helping you grow your wealth through smart real estate investments.  Our team brings a diverse background in real estate, finance, and asset management. We aim to build a portfolio that generates substantial returns while contributing to the communities we invest in.</p>
-
-    <h2><span style="color: #ca6f00;">What We Do</span></h2>
-    <p>We offer tailored investment strategies:</p>
-    <ul>
-        <li><strong>Flipping for Quick Returns:</strong> We acquire and renovate undervalued properties for fast sales.</li>
-        <li><strong>Long-Term Investment:</strong> We hold rental properties to generate steady income and appreciation over time.</li>
-    </ul>
-    <p>For investors who want more involvement, we offer exclusive access to properties you can flip on your own or invest in projects we manage. Our investor group gets first dibs on deals that fit their needs.</p>
-
-    <h2><span style="color: #ca6f00;">Why Invest with Us</span></h2>
-    <ul>
-        <li><strong>Expertise:</strong> We apply proven strategies to maximize returns.</li>
-        <li><strong>Proactive Management:</strong> We treat each asset like a business, ensuring growth and profitability.</li>
-        <li><strong>Transparency:</strong> You’ll receive regular updates, reports, and open communication on your investments.</li>
-    </ul>
-
-    </ul>
-
-    <h2>Join the <strong>Bauer Investment Group (BIG)</strong></h2>
-    <p>At <strong>BIG</strong>, we believe in building strong relationships that come full circle. When you invest with us, you’re not just contributing capital—you’re joining a community that values <strong>trust, integrity,</strong> and <strong>long-term success</strong>. We are excited to partner with investors who share our vision of creating lasting wealth, built on strong foundations.</p>
-
-    <p>If you're interested in learning more about our current investment opportunities or exploring ways we can work together, we invite you to reach out. We look forward to building a successful partnership and creating value that benefits us all.</p>
-
-    <p>Thank you for your trust and confidence. <strong>Together, we can achieve something truly great.</strong></p>
-    <p>You can reach me directly by email, call, or text:</p>
-    <p><a href="mailto:robin@two16.ca">robin@two16.ca</a> | <a href="tel:4037015759">403.701.5759</a></p>
-    <p class="spacer">Looking forward to hearing from you!</p>
-    <br>
-    <p class="signature">Sincerely,<br><strong>Robin Bauer</strong><br>Founder and CEO<br><strong>BIG Property Services</strong></p>
-    </div>
-    <div class="line"></div>
-    <br>
-    <h2>How to Invest with <strong>BIG</strong></h2>
-<p>Take your real estate investments to the next level and grow your wealth! At <strong>BIG</strong>, we believe that success is built on strong relationships and smart investments. If you’re interested in maximizing your returns and expanding your portfolio, we’re here to help.</p>
-
-<p>Our approach is straightforward: real estate is a major investment, and we take it seriously. We want to build a partnership that’s based on trust, shared goals, and a clear strategy for success. Here’s how we make that happen:</p>
-
-<h3>Your Path to Investing with Us</h3>
-<ol>
-    <li><strong>Get to Know Each Other:</strong> The first step is simple—let’s meet. We’ll sit down for a conversation, discuss your real estate goals, and share our investment philosophy. We want to understand what drives you as an investor and how we can help you reach your objectives.</li>
-    <li><strong>Craft a Custom Investment Plan:</strong> Armed with insights from our discussion, we’ll develop a tailored strategy that aligns with your goals. Whether you're focused on quick flips or long-term growth, we'll design a plan that maximizes your potential.</li>
-    <li><strong>Join the Group:</strong> Once we’re aligned, we’ll welcome you into our exclusive investor group. From here, we’ll put your plan into action—whether it's flipping properties for fast returns or holding assets for steady, long-term gains.</li>
-    <li><strong>Stay Connected and Informed:</strong> As a <strong>BIG</strong> investor, you’ll always be in the loop. Expect regular updates, new opportunities, and complete transparency every step of the way. Your success is our priority, and we’re committed to growing your wealth with care and precision.</li>
-</ol>
-
-<p>Before we wrap up, be sure to <strong>sign up for our newsletter</strong> to stay ahead of the game. You’ll get insider updates on our latest projects, plus access to exclusive off-market wholesale deals that can give your portfolio a competitive edge.</p>
-
-    
-    <div class="line"></div>
-
-    <br>
-    <p style="font-size: 1.3em;"><span class="bold">Subscribe to our Smart Property Profits newsletter</span>: Your 5-minute brief on Property Investments, Management, and Profits.</p>
-    <p><span class="bold">Maximize Your Holdings</span>: Join our newsletter to stay ahead with expert insights and strategies tailored for investors with 1 to 5 properties. We deliver actionable tips on optimizing your investments, enhancing cash flow, and building long-term wealth. Discover proven techniques and market trends to make the most of your real estate portfolio.</p>
-    <iframe src="https://embeds.beehiiv.com/f74acaff-23be-480f-afcd-bf89438d6e65?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
-    <br>
-    <br>
-    <div class="line"></div>
-    <br>
-    <p class="signature"><strong>Robin Bauer</strong><br>Founder and CEO<br><strong>BIG Property Services</strong></p>
-    <br>
-    <a href="mailto:robin@two16.ca" class="learn-more-btn">robin@two16.ca</a>
-    <a href="tel:4037015759" class="learn-more-btn">403.701.5759</a>
-    <br>
-    <br>
 </body>
 </html>

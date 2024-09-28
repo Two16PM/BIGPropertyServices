@@ -68,21 +68,71 @@
             background-color: #a45c00;
         }
 
-        .footer {
-            background-color: #333;
-            color: white;
+        .below-the-fold {
+            padding: 60px 20px;
             text-align: center;
+        }
+
+        .below-the-fold h2 {
+            font-size: 36px;
+            margin: 30px 0 15px 0;
+            color: #333;
+        }
+
+        .below-the-fold .section {
+            margin: 30px 0;
+        }
+
+        .three-columns {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .column {
+            width: 30%;
+            background-color: #fff;
             padding: 20px;
-            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .footer p {
-            margin: 5px 0;
-            font-size: 14px;
+        .column h3 {
+            color: #ca6f00;
+            margin-bottom: 15px;
+        }
+        
+        .contact-cta {
+            background-color: #f7f7f7;
+            padding: 40px 20px;
+            border-radius: 8px;
+            margin: 40px 0;
         }
 
-        .footer .highlight-footer {
-            color: #ca6f00; /* Gold color for 'B' in BIG */
+        .contact-cta h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .contact-cta p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact-button {
+            background-color: #ca6f00;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #a45c00;
         }
     </style>
 </head>
@@ -95,10 +145,31 @@
         <a href="#contact" class="cta-button">Get Your Next Big Deal</a>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2024 BIG Property Services</p>
-        <p>Your partner in property investments, built on trust and integrity.</p>
-        <p><span class="highlight-footer">BIG</span> stands for Bauer Investor Group.</p>
+    <div class="below-the-fold">
+        <h2>BIG Vision. Bigger Results.</h2>
+        <p class="section">At BIG Property Services, we specialize in turning overlooked opportunities into extraordinary successes. Born in Calgary, AB, we’re not just another property service—we’re your partner in discovering off-market gems, maximizing investments, and creating properties that make an impact. We believe in transparency, collaboration, and delivering results that exceed expectations.</p>
+        
+        <h2>How We Create Value</h2>
+        <div class="three-columns">
+            <div class="column">
+                <h3>Off-Market Mastery</h3>
+                <p>We dig deep to find high-potential, off-market properties—hidden opportunities that others miss.</p>
+            </div>
+            <div class="column">
+                <h3>Investor Synergy</h3>
+                <p>For investors, we offer tailored opportunities that align with your financial goals and hands-on management.</p>
+            </div>
+            <div class="column">
+                <h3>Developer Partnerships</h3>
+                <p>We collaborate with developers to bring ambitious projects to life, built on trust and expertise.</p>
+            </div>
+        </div>
+
+        <div class="contact-cta">
+            <h3>Ready to Get BIG?</h3>
+            <p>Let’s grab a coffee and talk about how we can work together. Whether you’re an investor looking for your next big opportunity, a developer seeking the perfect project, or a property owner needing a swift solution, we’re here to listen and act.</p>
+            <a href="#contact" class="contact-button">Join the BIG Network</a>
+        </div>
     </div>
 </body>
 </html>

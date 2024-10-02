@@ -27,13 +27,20 @@
 
         .header-left {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         .logo {
             width: 150px;
             height: auto;
-            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .slogan {
+            font-style: italic;
+            font-size: 16px;
+            color: #333;
         }
 
         .header-tagline {
@@ -283,6 +290,7 @@
 
         .footer-right {
             display: flex;
+            flex-direction: column;
             align-items: flex-end;
             padding-right: 80px;
         }
@@ -292,8 +300,11 @@
             height: auto;
         }
 
-        .footer-icon {
-            margin-right: 8px;
+        .footer-slogan {
+            font-style: italic;
+            font-size: 14px;
+            color: #f0f0f0;
+            margin-top: 10px;
         }
 
         @media (max-width: 768px) {
@@ -337,13 +348,14 @@
     <div class="header">
         <div class="header-left">
             <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
+            <p class="slogan">Unlocking Off-Market Property Deals with Precision for BIG Returns.</p>
             <h1 class="header-tagline"><span class="highlight">Be Bold.</span> Build BIG.</h1>
         </div>
     </div>
 
     <div class="hero-section">
         <h2>We find properties with strategy and precision, securing the best off-market deals no one else has access to.</h2>
-        <div class="keywords">Trust. Network. Returns.</div>
+        <div class="keywords">TRUST. VALUE. RETURNS.</div>
 
         <h2 class="why-big-title">Why BIG!</h2>
         <div class="services-section">
@@ -408,6 +420,7 @@
         </div>
         <div class="footer-right">
             <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
+            <p class="footer-slogan">Unlocking Off-Market Property Deals with Precision for BIG Returns.</p>
         </div>
     </div>
 

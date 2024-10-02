@@ -13,46 +13,57 @@
             margin: 0;
             padding: 0;
         }
+
+        /* Header and Hero Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 150px; /* Smaller logo in the top left */
+            height: auto;
+        }
+
         .hero-section {
+            background-color: #E0E0E0; /* Silver grey background */
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             text-align: center;
             padding: 0 20px;
         }
 
-        .logo {
-            width: 50%;
-            max-width: 300px;
-            margin-bottom: 20px;
-        }
-
         h1 {
             font-size: 48px;
-            margin: 0;
             color: #333;
+            margin: 0;
         }
 
         .highlight {
-            color: #ca6f00; /* Gold color for 'B' in BIG */
+            color: #ca6f00; /* Gold for the 'B' in BIG */
         }
 
         h2 {
             font-size: 24px;
-            margin: 10px 0 30px 0;
+            margin: 10px 0;
             color: #555;
         }
 
-        p {
-            font-size: 18px;
-            margin: 10px 0;
-            color: #777;
+        .keywords {
+            font-size: 20px;
+            color: #ca6f00; /* Gold for key words */
+            margin: 20px 0;
+        }
+
+        .hero-text {
             max-width: 700px;
-            text-align: center; /* Center paragraph text */
-            margin-left: auto; /* Center the paragraph */
-            margin-right: auto; /* Center the paragraph */
+            color: #777;
+            font-size: 18px;
         }
 
         .cta-button {
@@ -65,183 +76,29 @@
             cursor: pointer;
             text-decoration: none;
             transition: background-color 0.3s ease;
+            margin-top: 30px;
         }
 
         .cta-button:hover {
             background-color: #a45c00;
         }
-
-        .below-the-fold {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .below-the-fold h2 {
-            font-size: 36px;
-            margin: 30px 0 15px 0;
-            color: #333;
-            text-align: center;
-        }
-
-        .below-the-fold .section {
-            margin: 30px 0;
-            text-align: center; /* Ensure section text is centered */
-            max-width: 800px; /* Set max width for paragraph */
-            margin-left: auto; /* Center the section */
-            margin-right: auto; /* Center the section */
-        }
-
-        .three-columns {
-            display: flex;
-            justify-content: space-around;
-            margin: 40px 0;
-        }
-
-        .column {
-            width: 30%;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .column h3 {
-            color: #ca6f00;
-            margin-bottom: 15px;
-        }
-        
-        .contact-cta {
-            background-color: #f7f7f7;
-            padding: 40px 20px;
-            border-radius: 8px;
-            margin: 40px 0;
-            max-width: 800px; /* Set max width for contact CTA */
-            margin-left: auto; /* Center the contact CTA */
-            margin-right: auto; /* Center the contact CTA */
-        }
-
-        .contact-cta h3 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .contact-cta p {
-            font-size: 20px;
-            margin-bottom: 20px;
-            text-align: center; /* Center contact CTA paragraph */
-        }
-
-        .contact-button {
-            background-color: #ca6f00;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background-color: #a45c00;
-        }
-        
-        .footer {
-        background-color: #333;
-        color: white;
-        text-align: left; /* Align footer text to the left */
-        padding: 10px 20px; /* Add padding to the footer */
-        position: relative;
-        display: flex; /* Use flexbox for alignment */
-        flex-direction: column; /* Arrange items in a column */
-        align-items: flex-start; /* Align items to the start (left) */
-    }
-
-    .footer p {
-        margin: 5px 0;
-        font-size: 14px;
-        width: 100%; /* Ensure paragraphs take full width */
-        text-align: left; /* Justify text to the left */
-    }
-
-        .footer .highlight-footer {
-            color: #ca6f00; /* Gold color for 'B' in BIG */
-        }
-.contact-info {
-    font-size: 14px; /* Match the font size used on your site */
-    color: #777; /* Match the color used for paragraphs */
-}
-
-.contact-info a {
-    color: #ca6f00; /* Change this to match the highlight color if desired */
-    text-decoration: none; /* Remove underline for a cleaner look */
-    margin-right: 15px; /* Add space between links */
-}
-
-.contact-info a:hover {
-    text-decoration: underline; /* Optional: underline on hover for interactivity */
-}
-@media (max-width: 768px) {
-    .three-columns {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-        
     </style>
 </head>
 <body>
-    <div class="hero-section">
+    <div class="header">
         <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
+    </div>
+
+    <div class="hero-section">
         <h1><span class="highlight">Be Bold.</span> Build BIG.</h1>
-        <br>
-        <h2>BIG Value. BIG Returns. BIG Service. <span class="highlight">Trust BIG.</span></h2>
-        <p>At BIG Property Services, we help you find, fund, and manage your investments. Whether you're securing off-market deals, funding a flip, or seeking long-term property management, we provide the solutions that deliver BIG results with unmatched trust and transparency.</p>
-        <br>
-        <a href="mailto:robin@two16.ca" class="cta-button">Get Your Next Big Deal</a>
+        <h2>Trust. Network. Returns.</h2>
+        <div class="keywords">BIG Value. BIG Returns. BIG Service. BIG Trust.</div>
+        <p class="hero-text">
+            1. We find amazing off-market deals for our network. They buy the properties directly from us—no fuss, no hassle, easy and fast transactions. <br>
+            2. We manage flips, take on investors, buy great deals, and manage the flip start to finish with a focus on delivering BIG returns. <br>
+            3. For investors that buy long-term rentals through us, we also provide full property management services.
+        </p>
+        <a href="mailto:robin@two16.ca" class="cta-button">Find Your Next BIG Deal</a>
     </div>
-
-    <div class="below-the-fold">
-        <h2>Our Services</h2>
-        <p class="section">At BIG Property Services, we specialize in three key areas:</p>
-
-        <div class="three-columns">
-            <div class="column">
-                <h3>Off-Market Deals</h3>
-                <p>We find high-potential, off-market properties and move them to investors. You buy these deals directly from us and handle the development yourself for the best returns.</p>
-            </div>
-            <div class="column">
-                <h3>Flip Management</h3>
-                <p>We bring on investors to fund the flip and handle everything from start to finish. Our goal is to target a strong return on investment (ROI) while you focus on reaping the benefits.</p>
-            </div>
-            <div class="column">
-                <h3>Long-Term Property Management</h3>
-                <p>For investors who purchase through us and hold the property long-term, we provide full property management services, ensuring your investment is well cared for and generates consistent returns.</p>
-            </div>
-        </div>
-
-        <div class="contact-cta">
-            <h3>Ready to partner with BIG?</h3>
-            <p>Let’s grab a coffee and talk about how we can work together. Whether you’re an investor looking for your next big opportunity, a developer seeking the perfect project, or a property owner needing a swift solution, we’re here to listen and act.</p>
-            <br>
-            <a href="mailto:robin@two16.ca" class="contact-button">Join the BIG Network</a>
-        </div>
-    </div>
-    <div class="footer">
-        <p>&copy; 2024 BIG Property Services</p>
-        <p>Your partner in property investments, built on trust and integrity.</p>
-        <p>Robin Bauer - Owner & CEO</p>
-        <p><span class="highlight-footer">BIG</span> (Bauer Investor Group)</p>
-        <span class="contact-info">
-        <a href="tel:+14037015759">403-701-5759</a>
-        <a href="mailto:robin@two16.ca">robin@two16.ca</a>
-    </span>
-</div>
 </body>
 </html>

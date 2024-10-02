@@ -190,6 +190,69 @@
         color: #555;
         line-height: 1.6;
     }
+     /* Footer Styles */
+    .footer {
+        background-color: #333; /* Dark background for contrast */
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-left p {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #f0f0f0;
+    }
+
+    .footer-left a {
+        color: #ca6f00; /* Gold color for email link */
+        text-decoration: none;
+    }
+
+    .footer-left a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-right {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .footer-logo {
+        width: 120px;
+        height: auto;
+    }
+
+    .footer-icon {
+        margin-right: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-left, .footer-right {
+            margin-top: 10px;
+        }
+
+        .footer-logo {
+            margin-top: 20px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -246,6 +309,16 @@
             <p class="value-description">Partnering with developers, we bring bold projects to life. Our collaborations are built on trust, transparency, and a shared commitment to success.</p>
         </div>
     </div>
+<div class="footer">
+    <div class="footer-left">
+        <p><span class="footer-icon">📞</span> 403-701-5759</p>
+        <p><span class="footer-icon">✉️</span> <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
+        <p>© 2024 BIG Property Services. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+        <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
+    </div>
+</div>
 </div>
 </div>
 </body>

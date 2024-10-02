@@ -81,23 +81,25 @@
             color: #777;
             font-size: 18px;
         }
-
-        .cta-button {
+    
+        .cta-button, .cta-footer-button {
             background-color: #ca6f00;
             color: white;
             border: none;
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 18px 35px; /* Slightly increased padding */
+            font-size: 20px;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease;
-            margin-top: 30px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         }
 
-        .cta-button:hover {
+        .cta-button:hover, .cta-footer-button:hover {
             background-color: #a45c00;
-        }
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+        }    
+        
 
         /* Why BIG section */
         .why-big-title {

@@ -16,54 +16,50 @@
 
         /* Header and Hero Section */
         .header {
-        background-color: #F5F5F5; /* Light background to match the overall look */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for distinction */
-    }
+            background-color: #F5F5F5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    .header-left {
-        display: flex;
-        align-items: center;
-    }
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
 
-    .logo {
-        width: 150px;
-        height: auto;
-        margin-right: 20px; /* Adds space between logo and tagline */
-    }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
 
-    .header-tagline {
-        font-size: 24px;
-        color: #333;
-        margin: 0;
-    }
+        .header-tagline {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
 
-    .highlight {
-        color: #ca6f00; /* Gold for 'B' in BIG */
-    }
+        .highlight {
+            color: #ca6f00; /* Gold for 'B' in BIG */
+        }
 
         .hero-section {
-            background-color: #E0E0E0; /* Silver grey background */
-            min-height: 100vh;
+            background-color: #E0E0E0;
+            min-height: 80vh; /* Reduced height to remove some grey space */
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Adjusted alignment to move text closer */
             align-items: center;
             text-align: center;
-            padding: 0 20px;
+            padding: 40px 20px; /* Reduced padding */
         }
 
         h1 {
             font-size: 48px;
             color: #333;
             margin: 0;
-        }
-
-        .highlight {
-            color: #ca6f00; /* Gold for the 'B' in BIG */
         }
 
         h2 {
@@ -73,8 +69,9 @@
         }
 
         .keywords {
-            font-size: 20px;
-            color: #ca6f00; /* Gold for key words */
+            font-size: 28px; /* Increased font size */
+            font-weight: bold; /* Made it bold */
+            color: #ca6f00;
             margin: 20px 0;
         }
 
@@ -122,7 +119,7 @@
             border-radius: 10px;
             width: 30%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 0 10px; /* Adds spacing between the columns */
+            margin: 0 10px;
         }
 
         .service-title {
@@ -139,7 +136,7 @@
 
         /* Method Section Styles */
         .method-section {
-            background-color: #f0f0f0; /* Light grey background */
+            background-color: #f0f0f0;
             padding: 60px 20px;
             text-align: center;
         }
@@ -164,12 +161,12 @@
         }
 
         .method-text strong {
-            color: #ca6f00; /* Highlight key points in the same gold color */
+            color: #ca6f00;
         }
 
         /* Value Section Styles */
         .value-section {
-            background-color: #ffffff; /* White background for contrast */
+            background-color: #ffffff;
             padding: 60px 20px;
             text-align: center;
         }
@@ -184,13 +181,13 @@
         .value-columns {
             display: flex;
             justify-content: space-around;
-            gap: 20px; /* Adds spacing between the columns */
+            gap: 20px;
             max-width: 1100px;
             margin: 0 auto;
         }
 
         .value-box {
-            background-color: #f7f7f7; /* Slightly lighter background for each box */
+            background-color: #f7f7f7;
             padding: 30px;
             border-radius: 10px;
             width: 30%;
@@ -200,7 +197,7 @@
 
         .value-heading {
             font-size: 22px;
-            color: #ca6f00; /* Gold for headings */
+            color: #ca6f00;
             margin-bottom: 15px;
             font-weight: bold;
         }
@@ -210,44 +207,46 @@
             color: #555;
             line-height: 1.6;
         }
-  .cta-footer {
-        background-color: #E0E0E0; /* Silver-grey background matching hero section */
-        text-align: center;
-        padding: 40px 20px;
-    }
 
-    .cta-footer-title {
-        font-size: 28px;
-        color: #333;
-        margin-bottom: 10px;
-        font-weight: bold;
-    }
+        /* CTA Above Footer */
+        .cta-footer {
+            background-color: #E0E0E0;
+            text-align: center;
+            padding: 80px 20px; /* Increased padding */
+        }
 
-    .cta-footer-text {
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 20px;
-    }
+        .cta-footer-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
 
-    .cta-footer-button {
-        background-color: #ca6f00;
-        color: white;
-        border: none;
-        padding: 15px 30px;
-        font-size: 18px;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
+        .cta-footer-text {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
 
-    .cta-footer-button:hover {
-        background-color: #a45c00;
-    }
+        .cta-footer-button {
+            background-color: #ca6f00;
+            color: white;
+            border: none;
+            padding: 20px 40px; /* Made button larger */
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-footer-button:hover {
+            background-color: #a45c00;
+        }
 
         /* Footer Styles */
         .footer {
-            background-color: #333; /* Dark background for contrast */
+            background-color: #333;
             color: white;
             display: flex;
             justify-content: space-between;
@@ -256,7 +255,6 @@
             position: relative;
             bottom: 0;
             width: 100%;
-            font-family: 'Montserrat', sans-serif;
         }
 
         .footer-left {
@@ -272,7 +270,7 @@
         }
 
         .footer-left a {
-            color: #ca6f00; /* Gold color for email link */
+            color: #ca6f00;
             text-decoration: none;
         }
 
@@ -281,10 +279,10 @@
         }
 
         .footer-right {
-        display: flex;
-        align-items: flex-end;
-        padding-right: 80px; /* Adjusts logo positioning slightly to the right */
-    }
+            display: flex;
+            align-items: flex-end;
+            padding-right: 80px;
+        }
 
         .footer-logo {
             width: 120px;
@@ -293,7 +291,6 @@
 
         .footer-icon {
             margin-right: 8px;
-       
         }
 
         @media (max-width: 768px) {
@@ -319,6 +316,7 @@
             <h1 class="header-tagline"><span class="highlight">Be Bold.</span> Build BIG.</h1>
         </div>
     </div>
+
     <div class="hero-section">
         <h2>We find properties with strategy and precision, securing the best off-market deals no one else has access to.</h2>
         <div class="keywords">Trust. Network. Returns.</div>
@@ -328,19 +326,19 @@
             <div class="service-box">
                 <div class="service-title">Exclusive Off-Market Deals</div>
                 <p class="service-description">We secure off-market deals that you won’t find anywhere else. Buy direct—fast, easy, and hassle-free.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-title">Flips and High-Return Investments</div>
+                <p class="service-description">From flips to high-return investments, we manage everything from start to finish, focusing on delivering BIG returns for our investors.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-title">Full Property Management</div>
+                <p class="service-description">If you invest in long-term rentals through us, we provide complete property management for total peace of mind.</p>
+            </div>
         </div>
-        <div class="service-box">
-            <div class="service-title">Flips and High-Return Investments</div>
-            <p class="service-description">From flips to high-return investments, we manage everything from start to finish, focusing on delivering BIG returns for our investors.</p>
-        </div>
-        <div class="service-box">
-            <div class="service-title">Full Property Management</div>
-            <p class="service-description">If you invest in long-term rentals through us, we provide complete property management for total peace of mind.</p>
-        </div>
-    </div>
 
-    <a href="mailto:robin@two16.ca" class="cta-button">Find Your Next BIG Deal</a>
-</div>
+        <a href="mailto:robin@two16.ca" class="cta-button">Find Your Next BIG Deal</a>
+    </div>
 
     <div class="method-section">
         <h2 class="section-title">Our Proven Method</h2>
@@ -371,21 +369,23 @@
             </div>
         </div>
     </div>
+
     <div class="cta-footer">
-    <h2 class="cta-footer-title">Ready to Make Your Next BIG Move?</h2>
-    <p class="cta-footer-text">Whether you're looking for your next investment or ready to flip, let's build BIG together.</p>
-    <a href="mailto:robin@two16.ca" class="cta-footer-button">Start Your Next Deal</a>
+        <h2 class="cta-footer-title">Ready to Make Your Next BIG Move?</h2>
+        <p class="cta-footer-text">Whether you're looking for your next investment or ready to flip, let's build BIG together.</p>
+        <a href="mailto:robin@two16.ca" class="cta-footer-button">Start Your Next Deal</a>
     </div>
+
     <div class="footer">
-    <div class="footer-left">
-        <p><span class="footer-icon">📞</span> 403-701-5759</p>
-        <p><span class="footer-icon">✉️</span> <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
-        <p>© 2024 BIG Property Services. All rights reserved.</p>
+        <div class="footer-left">
+            <p><span class="footer-icon">📞</span> 403-701-5759</p>
+            <p><span class="footer-icon">✉️</span> <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
+            <p>© 2024 BIG Property Services. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
+        </div>
     </div>
-    <div class="footer-right">
-        <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
-    </div>
-</div>
 
 </body>
 </html>

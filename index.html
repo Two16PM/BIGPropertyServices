@@ -18,42 +18,40 @@
         .header {
             background-color: #F5F5F5;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            flex-direction: column;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex-direction: row;
         }
 
         .header-left {
             display: flex;
-            flex-direction: column;
             align-items: center;
         }
 
         .logo {
             width: 150px;
             height: auto;
-            margin-bottom: 10px;
+            margin-right: 20px;
         }
 
         .header-tagline {
             font-size: 40px;
             color: #333;
-            text-align: center;
         }
 
         .slogan {
             font-style: italic;
             font-size: 20px;
             color: #333;
-            text-align: center;
         }
 
         .highlight {
             color: #ca6f00; /* Gold for 'B' in BIG */
         }
 
+        /* Hero Section */
         .hero-section {
             background-color: #E0E0E0;
             min-height: 80vh;
@@ -63,25 +61,6 @@
             align-items: center;
             text-align: center;
             padding: 40px 20px;
-        }
-
-        h1 {
-            font-size: 48px;
-            color: #333;
-            margin: 0;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin: 10px 0;
-            color: #555;
-        }
-
-        .keywords {
-            font-size: 28px;
-            font-weight: bold;
-            color: #ca6f00;
-            margin: 20px 0;
         }
 
         .hero-text {
@@ -98,80 +77,11 @@
             font-size: 18px;
             border-radius: 5px;
             cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
             margin-top: 30px;
         }
 
         .cta-button:hover {
             background-color: #a45c00;
-        }
-
-        /* Why BIG section */
-        .why-big-title {
-            font-size: 32px;
-            color: #333;
-            margin: 40px 0 20px;
-        }
-
-        .services-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            width: 100%;
-            max-width: 1000px;
-            margin-top: 20px;
-        }
-
-        .service-box {
-            background-color: #F0F0F0;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-title {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .service-description {
-            color: #555;
-            font-size: 16px;
-        }
-
-        /* Method Section Styles */
-        .method-section {
-            background-color: #f0f0f0;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 32px;
-            color: #333;
-            margin-bottom: 40px;
-            font-weight: bold;
-        }
-
-        .method-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .method-text {
-            font-size: 18px;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .method-text strong {
-            color: #ca6f00;
         }
 
         /* Value Section Styles */
@@ -190,7 +100,7 @@
 
         .value-columns {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             gap: 20px;
             max-width: 1100px;
             margin: 0 auto;
@@ -200,58 +110,9 @@
             background-color: #f7f7f7;
             padding: 30px;
             border-radius: 10px;
-            width: 90%;
+            width: 32%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: left;
-        }
-
-        .value-heading {
-            font-size: 22px;
-            color: #ca6f00;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .value-description {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* CTA Above Footer */
-        .cta-footer {
-            background-color: #E0E0E0;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .cta-footer-title {
-            font-size: 32px;
-            color: #333;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        .cta-footer-text {
-            font-size: 20px;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .cta-footer-button {
-            background-color: #ca6f00;
-            color: white;
-            border: none;
-            padding: 20px 40px;
-            font-size: 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-footer-button:hover {
-            background-color: #a45c00;
         }
 
         /* Footer Styles */
@@ -259,11 +120,10 @@
             background-color: #333;
             color: white;
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
+            justify-content: space-between;
             padding: 20px;
             width: 100%;
+            align-items: center;
         }
 
         .footer-left p {
@@ -284,25 +144,21 @@
         .footer-logo {
             width: 120px;
             height: auto;
-            margin-top: 20px;
         }
 
         .footer-slogan {
             font-style: italic;
             font-size: 14px;
             color: #f0f0f0;
-            margin-top: 10px;
+            margin-left: 20px;
         }
 
         /* Mobile Adjustments */
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
+                align-items: center;
                 text-align: center;
-            }
-
-            .hero-section {
-                padding: 20px;
             }
 
             .services-section {
@@ -314,8 +170,8 @@
             }
 
             .footer {
+                flex-direction: column;
                 text-align: center;
-                padding: 20px;
             }
         }
 
@@ -326,10 +182,6 @@
 
             .slogan {
                 font-size: 18px;
-            }
-
-            .hero-section h2 {
-                font-size: 20px;
             }
 
             .cta-footer-title {
@@ -352,39 +204,7 @@
         <h2 class="slogan">Unlocking Off-Market Properties with Precision for <strong>BIG</strong> Returns.</h2>
     </div>
 
-    <div class="hero-section">
-        <h2>We find properties with strategy and precision, securing the best off-market deals no one else has access to.</h2>
-        <div class="keywords">TRUST. VALUE. RETURNS.</div>
-
-        <h2 class="why-big-title">Why BIG!</h2>
-        <div class="services-section">
-            <div class="service-box">
-                <div class="service-title">Exclusive Off-Market Deals</div>
-                <p class="service-description">We secure off-market deals that you won’t find anywhere else. Buy direct—fast, easy, and hassle-free.</p>
-            </div>
-            <div class="service-box">
-                <div class="service-title">Flips and High-Return Investments</div>
-                <p class="service-description">From flips to high-return investments, we manage everything from start to finish, focusing on delivering BIG returns for our investors.</p>
-            </div>
-            <div class="service-box">
-                <div class="service-title">Full Property Management</div>
-                <p class="service-description">If you invest in long-term rentals through us, we provide complete property management for total peace of mind.</p>
-            </div>
-        </div>
-
-        <a href="mailto:robin@two16.ca" class="cta-button">Find Your Next BIG Deal</a>
-    </div>
-
-    <div class="method-section">
-        <h2 class="section-title">The <strong>BIG</strong> Method</h2>
-        <div class="method-content">
-            <p class="method-text">
-                At <strong>BIG</strong>, we keep it simple: <strong>Buy direct. Transform Properties. Maximize the spread.</strong> With smart acquisitions, thorough due diligence and bold moves, we deliver success—whether flipping for fast profits or building for long-term growth.</p>
-            <p class="method-text">
-                <strong>BIG Vision. Bigger Results.</strong> We uncover hidden opportunities and turn them into high-value investments. Based in Calgary, we’re your trusted partner for off-market gems that maximize returns and leave a lasting impact. <strong>Transparency, collaboration, and results</strong> are at the core of everything we do.
-            </p>
-        </div>
-    </div>
+    <!-- Hero Section and Content here -->
 
     <div class="value-section">
         <h2 class="value-title">How We Create Value</h2>
@@ -404,12 +224,6 @@
         </div>
     </div>
 
-    <div class="cta-footer">
-        <h2 class="cta-footer-title">Ready to Make Your Next BIG Move?</h2>
-        <p class="cta-footer-text">Whether you're looking for your next investment or ready to flip, let's build BIG together.</p>
-        <a href="mailto:robin@two16.ca" class="cta-footer-button">Start Your Next Deal</a>
-    </div>
-
     <div class="footer">
         <div class="footer-left">
             <p>Your partner in property investments, built on trust and integrity.</p>
@@ -418,8 +232,10 @@
             <p><span class="footer-icon">✉️</span> <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
             <p>© 2024 BIG (Bauer Investment Group) Property Services. All rights reserved.</p>
         </div>
-        <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
-        <p class="footer-slogan">Unlocking Off-Market Properties with Precision for BIG Returns.</p>
+        <div class="footer-right">
+            <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
+            <p class="footer-slogan">Unlocking Off-Market Properties with Precision for BIG Returns.</p>
+        </div>
     </div>
 
 </body>

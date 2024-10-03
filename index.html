@@ -12,7 +12,6 @@
             background-color: #F5F5F5;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; /* Prevents horizontal scrolling */
         }
 
         /* Header and Hero Section */
@@ -27,27 +26,13 @@
 
         .header-left {
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
         }
 
         .logo {
             width: 150px;
             height: auto;
-            margin-bottom: 10px;
-        }
-
-        .slogan {
-            font-style: italic;
-            font-size: 16px;
-            color: #333;
-        }
-
-        .header-right {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            margin-left: 20px;
+            margin-right: 20px;
         }
 
         .header-tagline {
@@ -62,13 +47,13 @@
 
         .hero-section {
             background-color: #E0E0E0;
-            min-height: 80vh;
+            min-height: 80vh; /* Reduced height to remove some grey space */
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: flex-start; /* Adjusted alignment to move text closer */
             align-items: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 40px 20px; /* Reduced padding */
         }
 
         h1 {
@@ -84,8 +69,8 @@
         }
 
         .keywords {
-            font-size: 28px;
-            font-weight: bold;
+            font-size: 28px; /* Increased font size */
+            font-weight: bold; /* Made it bold */
             color: #ca6f00;
             margin: 20px 0;
         }
@@ -95,25 +80,23 @@
             color: #777;
             font-size: 18px;
         }
-    
-        .cta-button, .cta-footer-button {
+
+        .cta-button {
             background-color: #ca6f00;
             color: white;
             border: none;
-            padding: 18px 35px; /* Slightly increased padding */
-            font-size: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
         }
 
-        .cta-button:hover, .cta-footer-button:hover {
+        .cta-button:hover {
             background-color: #a45c00;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
-        }    
-        
+        }
 
         /* Why BIG section */
         .why-big-title {
@@ -229,7 +212,7 @@
         .cta-footer {
             background-color: #E0E0E0;
             text-align: center;
-            padding: 80px 20px;
+            padding: 80px 20px; /* Increased padding */
         }
 
         .cta-footer-title {
@@ -249,7 +232,7 @@
             background-color: #ca6f00;
             color: white;
             border: none;
-            padding: 20px 40px;
+            padding: 20px 40px; /* Made button larger */
             font-size: 20px;
             border-radius: 5px;
             cursor: pointer;
@@ -297,7 +280,6 @@
 
         .footer-right {
             display: flex;
-            flex-direction: column;
             align-items: flex-end;
             padding-right: 80px;
         }
@@ -307,46 +289,22 @@
             height: auto;
         }
 
-        .footer-slogan {
-            font-style: italic;
-            font-size: 14px;
-            color: #f0f0f0;
-            margin-top: 10px;
+        .footer-icon {
+            margin-right: 8px;
         }
 
         @media (max-width: 768px) {
-            .services-section,
-            .value-columns {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-box,
-            .value-box {
-                width: 90%; /* Prevent full-width on mobile */
-                margin-bottom: 20px;
-                max-width: 500px; /* Ensure it doesn't stretch too wide */
-            }
-
             .footer {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .footer-left,
-            .footer-right {
+            .footer-left, .footer-right {
                 margin-top: 10px;
             }
 
             .footer-logo {
                 margin-top: 20px;
-                padding-right: 0;
-            }
-
-            .header-tagline {
-                font-size: 28px; /* Smaller tagline for mobile */
-                text-align: center;
-                line-height: 1.2;
             }
         }
     </style>
@@ -355,16 +313,13 @@
     <div class="header">
         <div class="header-left">
             <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
-            <p class="slogan">Unlocking Off-Market Property Deals with Precision for BIG Returns.</p>
-        </div>
-        <div class="header-right">
             <h1 class="header-tagline"><span class="highlight">Be Bold.</span> Build BIG.</h1>
         </div>
     </div>
 
     <div class="hero-section">
         <h2>We find properties with strategy and precision, securing the best off-market deals no one else has access to.</h2>
-        <div class="keywords">Trust. Network. Returns.</div>
+        <div class="keywords">TRUST. VALUE. RETURNS.</div>
 
         <h2 class="why-big-title">Why BIG!</h2>
         <div class="services-section">
@@ -381,7 +336,7 @@
                 <p class="service-description">If you invest in long-term rentals through us, we provide complete property management for total peace of mind.</p>
             </div>
         </div>
-        <br>
+
         <a href="mailto:robin@two16.ca" class="cta-button">Find Your Next BIG Deal</a>
     </div>
 
@@ -425,11 +380,10 @@
         <div class="footer-left">
             <p><span class="footer-icon">📞</span> 403-701-5759</p>
             <p><span class="footer-icon">✉️</span> <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
-            <p>© 2024 BIG (Bauer Investment Group) Property Services. All rights reserved.</p>
+            <p>© 2024 BIG Property Services. All rights reserved.</p>
         </div>
         <div class="footer-right">
             <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
-            <p class="footer-slogan">Unlocking Off-Market Property Deals with Precision for BIG Returns.</p>
         </div>
     </div>
 

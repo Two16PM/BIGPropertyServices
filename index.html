@@ -18,47 +18,51 @@
         .header {
             background-color: #F5F5F5;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            flex-direction: column;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .header-left {
             display: flex;
+            flex-direction: column;
             align-items: center;
         }
 
         .logo {
             width: 150px;
             height: auto;
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
 
         .header-tagline {
             font-size: 40px;
             color: #333;
-            margin: 0;
+            text-align: center;
         }
 
         .slogan {
             font-style: italic;
             font-size: 20px;
             color: #333;
+            text-align: center;
         }
+
         .highlight {
             color: #ca6f00; /* Gold for 'B' in BIG */
         }
 
         .hero-section {
             background-color: #E0E0E0;
-            min-height: 80vh; /* Reduced height to remove some grey space */
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Adjusted alignment to move text closer */
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
-            padding: 40px 20px; /* Reduced padding */
+            padding: 40px 20px;
         }
 
         h1 {
@@ -74,8 +78,8 @@
         }
 
         .keywords {
-            font-size: 28px; /* Increased font size */
-            font-weight: bold; /* Made it bold */
+            font-size: 28px;
+            font-weight: bold;
             color: #ca6f00;
             margin: 20px 0;
         }
@@ -112,7 +116,9 @@
 
         .services-section {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
             width: 100%;
             max-width: 1000px;
             margin-top: 20px;
@@ -122,9 +128,8 @@
             background-color: #F0F0F0;
             padding: 20px;
             border-radius: 10px;
-            width: 30%;
+            width: 90%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 0 10px;
         }
 
         .service-title {
@@ -185,7 +190,7 @@
 
         .value-columns {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
             gap: 20px;
             max-width: 1100px;
             margin: 0 auto;
@@ -195,7 +200,7 @@
             background-color: #f7f7f7;
             padding: 30px;
             border-radius: 10px;
-            width: 30%;
+            width: 90%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
@@ -217,7 +222,7 @@
         .cta-footer {
             background-color: #E0E0E0;
             text-align: center;
-            padding: 80px 20px; /* Increased padding */
+            padding: 80px 20px;
         }
 
         .cta-footer-title {
@@ -237,7 +242,7 @@
             background-color: #ca6f00;
             color: white;
             border: none;
-            padding: 20px 40px; /* Made button larger */
+            padding: 20px 40px;
             font-size: 20px;
             border-radius: 5px;
             cursor: pointer;
@@ -254,18 +259,11 @@
             background-color: #333;
             color: white;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            text-align: center;
             align-items: center;
             padding: 20px;
-            position: relative;
-            bottom: 0;
             width: 100%;
-        }
-
-        .footer-left {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
         }
 
         .footer-left p {
@@ -283,16 +281,10 @@
             text-decoration: underline;
         }
 
-        .footer-right {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            padding-right: 80px;
-        }
-
         .footer-logo {
             width: 120px;
             height: auto;
+            margin-top: 20px;
         }
 
         .footer-slogan {
@@ -302,22 +294,51 @@
             margin-top: 10px;
         }
 
-        .footer-icon {
-            margin-right: 8px;
-        }
-        
+        /* Mobile Adjustments */
         @media (max-width: 768px) {
-            .footer {
+            .header {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .footer-left, .footer-right {
-                margin-top: 10px;
+            .hero-section {
+                padding: 20px;
             }
 
-            .footer-logo {
-                margin-top: 20px;
+            .services-section {
+                flex-direction: column;
+            }
+
+            .value-columns {
+                flex-direction: column;
+            }
+
+            .footer {
+                text-align: center;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-tagline {
+                font-size: 28px;
+            }
+
+            .slogan {
+                font-size: 18px;
+            }
+
+            .hero-section h2 {
+                font-size: 20px;
+            }
+
+            .cta-footer-title {
+                font-size: 24px;
+            }
+
+            .cta-footer-button {
+                padding: 15px 30px;
+                font-size: 18px;
             }
         }
     </style>
@@ -328,7 +349,7 @@
             <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
             <h1 class="header-tagline"><span class="highlight">Be Bold.</span> Build BIG.</h1>
         </div>
-    <h2 class="slogan">Unlocking Off-Market Properties with Precision for <strong>BIG</strong> Returns.</h2>
+        <h2 class="slogan">Unlocking Off-Market Properties with Precision for <strong>BIG</strong> Returns.</h2>
     </div>
 
     <div class="hero-section">
@@ -358,7 +379,7 @@
         <h2 class="section-title">The <strong>BIG</strong> Method</h2>
         <div class="method-content">
             <p class="method-text">
-                At <strong>BIG</strong>, we keep it simple: <strong>Buy direct. Transform Properties. Maximize the spread.</strong>. With smart acquisitions, thorough due diligence and bold moves, we deliver success—whether flipping for fast profits or building for long-term growth.</p>
+                At <strong>BIG</strong>, we keep it simple: <strong>Buy direct. Transform Properties. Maximize the spread.</strong> With smart acquisitions, thorough due diligence and bold moves, we deliver success—whether flipping for fast profits or building for long-term growth.</p>
             <p class="method-text">
                 <strong>BIG Vision. Bigger Results.</strong> We uncover hidden opportunities and turn them into high-value investments. Based in Calgary, we’re your trusted partner for off-market gems that maximize returns and leave a lasting impact. <strong>Transparency, collaboration, and results</strong> are at the core of everything we do.
             </p>
@@ -397,10 +418,8 @@
             <p><span class="footer-icon">✉️</span> <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
             <p>© 2024 BIG (Bauer Investment Group) Property Services. All rights reserved.</p>
         </div>
-        <div class="footer-right">
-            <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
-            <p class="footer-slogan">Unlocking Off-Market Properties with Precision for BIG Returns.</p>
-        </div>
+        <img src="BIG Property Services Logo.png" alt="BIG Property Services Logo" class="footer-logo">
+        <p class="footer-slogan">Unlocking Off-Market Properties with Precision for BIG Returns.</p>
     </div>
 
 </body>

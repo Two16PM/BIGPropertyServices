@@ -306,6 +306,7 @@
             margin-right: 8px;
         }
         
+        /* Mobile Adjustments */
         @media (max-width: 768px) {
             .footer {
                 flex-direction: column;
@@ -318,6 +319,17 @@
 
             .footer-logo {
                 margin-top: 20px;
+            }
+
+            /* Stack the columns on mobile */
+            .services-section, .value-columns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-box, .value-box {
+                width: 90%; /* Make boxes take up most of the width */
+                margin-bottom: 20px;
             }
         }
     </style>

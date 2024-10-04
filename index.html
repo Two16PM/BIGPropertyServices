@@ -103,31 +103,116 @@
             background-color: #a45c00;
         }
 
-        /* Brand Story Section */
-        .story-section {
-            background-color: #ffffff;
+        /* Why BIG section */
+        .why-big-title {
+            font-size: 32px;
+            color: #333;
+            margin: 40px 0 20px;
+        }
+
+        .services-section {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+
+        .service-box {
+            background-color: #F0F0F0;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+            text-align: left;
+
+        }
+
+        .service-title {
+            font-size: 20px;
+            color: #ca6f00;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .service-description {
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Method Section Styles */
+        .method-section {
+            background-color: #f0f0f0;
             padding: 60px 20px;
             text-align: center;
         }
 
-        .story-title {
+        .section-title {
             font-size: 32px;
             color: #333;
             margin-bottom: 40px;
             font-weight: bold;
         }
 
-        .story-text {
-            max-width: 800px;
+        .method-content {
+            max-width: 900px;
             margin: 0 auto;
+        }
+
+        .method-text {
             font-size: 18px;
             color: #555;
             line-height: 1.8;
             margin-bottom: 30px;
         }
 
-        .story-text strong {
+        .method-text strong {
             color: #ca6f00;
+        }
+
+        /* Value Section Styles */
+        .value-section {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .value-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .value-columns {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .value-box {
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .value-heading {
+            font-size: 22px;
+            color: #ca6f00;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .value-description {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
         }
 
         /* CTA Above Footer */
@@ -250,6 +335,17 @@
             .footer-logo {
                 margin-top: 20px;
             }
+
+            /* Stack the columns on mobile */
+            .services-section, .value-columns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-box, .value-box {
+                width: 90%; /* Make boxes take up most of the width */
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -264,35 +360,53 @@
     <div class="hero-section">
         <h2>We find properties with strategy and precision, securing the best off-market deals no one else has access to.</h2>
         <div class="keywords">TRUST. VALUE. RETURNS.</div>
+
+        <h2 class="why-big-title">Why BIG!</h2>
+        <div class="services-section">
+            <div class="service-box">
+                <div class="service-title">Exclusive Off-Market Deals</div>
+                <p class="service-description">We secure off-market deals that you won’t find anywhere else. Buy direct—fast, easy, and hassle-free.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-title">Flips and High-Return Investments</div>
+                <p class="service-description">From flips to high-return investments, we manage everything from start to finish, focusing on delivering BIG returns for our investors.</p>
+            </div>
+            <div class="service-box">
+                <div class="service-title">Full Property Management</div>
+                <p class="service-description">If you invest in long-term rentals through us, we provide complete property management for total peace of mind.</p>
+            </div>
+        </div>
+
+        <a href="mailto:robin@two16.ca" class="cta-button">Find Your Next BIG Deal</a>
     </div>
 
-    <div class="story-section">
-        <h2 class="story-title">Unlock Your Investment Potential with BIG Property Services</h2>
-        <p class="story-text">
-            Welcome to BIG Property Services, where we believe that every investor deserves access to exceptional real estate opportunities. Many investors face challenges navigating the complex world of real estate, searching for off-market deals that can truly transform their portfolios. Limited access to lucrative properties, time constraints, and a lack of market expertise can make this journey overwhelming.
-        </p>
-        <p class="story-text">
-            In today’s competitive real estate landscape, finding high-quality investments can be daunting. Without the right resources, many investors miss out on incredible opportunities that can yield significant returns. The feelings of confusion, frustration, and uncertainty are common among investors.
-        </p>
-        <p class="story-text">
-            At BIG Property Services, we are dedicated to changing that narrative. Our approach is simple yet powerful:
-        </p>
-        <ul class="story-text">
-            <li><strong>Exclusive Off-Market Deals:</strong> We secure off-market deals that you won’t find anywhere else. Buy direct—fast, easy, and hassle-free.</li>
-            <li><strong>Flips and High-Return Investments:</strong> From flips to high-return investments, we manage everything from start to finish, focusing on delivering BIG returns for our investors.</li>
-            <li><strong>Full Property Management:</strong> If you invest in long-term rentals through us, we provide complete property management for total peace of mind.</li>
-        </ul>
-        <p class="story-text">
-            Investors can transform their journeys from confusion to clarity with our support. By partnering with BIG, you will:
-        </p>
-        <ul class="story-text">
-            <li><strong>Grow Your Portfolio:</strong> Unlock opportunities that align with your vision, building a robust and diverse real estate portfolio.</li>
-            <li><strong>Save Time and Reduce Stress:</strong> Our streamlined process allows you to focus on what matters most while we handle the complexities of property acquisition.</li>
-            <li><strong>Experience Meaningful Engagement:</strong> Engage in projects that excite you, knowing you have a trusted partner by your side.</li>
-        </ul>
-        <p class="story-text">
-            Our commitment to transparency, personalized service, and a high-touch approach ensures that you are not just a number but a valued partner.
-        </p>
+    <div class="method-section">
+        <h2 class="section-title">The <strong>BIG</strong> Method</h2>
+        <div class="method-content">
+            <p class="method-text">
+                At <strong>BIG</strong>, we keep it simple: <strong>Buy direct. Transform Properties. Maximize the spread.</strong>. With smart acquisitions, thorough due diligence and bold moves, we deliver success—whether flipping for fast profits or building for long-term growth.</p>
+            <p class="method-text">
+                <strong>BIG Vision. Bigger Results.</strong> We uncover hidden opportunities and turn them into high-value investments. Based in Calgary, we’re your trusted partner for off-market gems that maximize returns and leave a lasting impact. <strong>Transparency, collaboration, and results</strong> are at the core of everything we do.
+            </p>
+        </div>
+    </div>
+
+    <div class="value-section">
+        <h2 class="value-title">How We Create Value</h2>
+        <div class="value-columns">
+            <div class="value-box">
+                <h3 class="value-heading">Off-Market Expertise</h3>
+                <p class="value-description">We find hidden, high-potential off-market properties and deliver exclusive, wholesale opportunities directly to you.</p>
+            </div>
+            <div class="value-box">
+                <h3 class="value-heading">Strategic Investor Alignment</h3>
+                <p class="value-description">We tailor opportunities to fit your financial goals, whether you're after passive income or hands-on management, with a focus on maximizing returns.</p>
+            </div>
+            <div class="value-box">
+                <h3 class="value-heading">Developer Collaborations</h3>
+                <p class="value-description">Partnering with developers, we turn bold visions into reality, grounded in trust, transparency, and shared success.</p>
+            </div>
+        </div>
     </div>
 
     <div class="cta-footer">

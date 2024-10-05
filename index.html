@@ -15,7 +15,7 @@
             color: #333;
         }
 
-        /* Header and Hero Section */
+        /* Header Section */
         .header {
             background-color: #F5F5F5;
             display: flex;
@@ -39,29 +39,31 @@
             color: #CA6F00; /* Gold highlight */
         }
 
+        /* Hero Section */
         .hero-section {
             background-color: #155E95;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
             color: #fff;
         }
 
         .hero-title {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
         .hero-subtitle {
-            font-size: 28px;
-            margin-bottom: 20px;
+            font-size: 30px;
+            margin-bottom: 30px;
         }
 
         .cta-button {
             background-color: #CA6F00;
             color: white;
-            padding: 15px 30px;
-            font-size: 20px;
-            border-radius: 5px;
+            padding: 20px 40px;
+            font-size: 22px;
+            border-radius: 8px;
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s ease;
@@ -73,78 +75,93 @@
 
         /* Section 1: Our Promise */
         .section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
         .section-title {
-            font-size: 36px;
+            font-size: 42px;
             color: #333;
-            margin-bottom: 20px;
-        }
-
-        .section-subheading {
-            font-size: 22px;
-            color: #555;
+            font-weight: bold;
             margin-bottom: 30px;
         }
 
         .section-body {
             max-width: 800px;
             margin: 0 auto;
-            font-size: 18px;
+            font-size: 20px;
             color: #555;
             line-height: 1.8;
+        }
+
+        .section-subheading {
+            font-size: 24px;
+            color: #555;
+            margin: 40px 0;
+            font-weight: bold;
         }
 
         /* Section 2: The BIG Method */
         .method-steps {
             max-width: 900px;
             margin: 0 auto;
+            text-align: left;
         }
 
         .step {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
             color: #CA6F00;
             margin: 20px 0;
         }
 
+        .step-text {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
         /* Section 3: Our Services */
         .services-section {
             background-color: #f0f0f0;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
         .service {
-            max-width: 300px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 10px;
             margin: 20px auto;
+            max-width: 300px;
             text-align: left;
         }
 
         .service-title {
-            font-size: 24px;
+            font-size: 26px;
             color: #CA6F00;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
         }
 
         .service-body {
             font-size: 18px;
             color: #555;
+            line-height: 1.6;
         }
 
         /* Call to Action */
         .cta {
             background-color: #CA6F00;
             color: white;
-            padding: 20px;
+            padding: 20px 40px;
             font-size: 22px;
             text-align: center;
             cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         /* Footer */
@@ -200,9 +217,14 @@
     <div class="section">
         <h2 class="section-title">The BIG Method: Simple. Powerful. Proven.</h2>
         <div class="method-steps">
-            <p class="step">Find the Deal: We tap into our network to uncover high-potential, off-market properties.</p>
-            <p class="step">Analyze the Opportunity: Through rigorous due diligence and market analysis, we do all the heavy lifting so you don’t have to.</p>
-            <p class="step">Deliver Results: Whether it’s a fast flip or a long-term rental, we handle the execution, maximizing value and minimizing stress.</p>
+            <div class="step">Find the Deal</div>
+            <p class="step-text">We tap into our network to uncover high-potential, off-market properties.</p>
+
+            <div class="step">Analyze the Opportunity</div>
+            <p class="step-text">Through rigorous due diligence and market analysis, we do all the heavy lifting so you don’t have to.</p>
+
+            <div class="step">Deliver Results</div>
+            <p class="step-text">Whether it’s a fast flip or a long-term rental, we handle the execution, maximizing value and minimizing stress.</p>
         </div>
     </div>
 
@@ -222,55 +244,6 @@
             <p class="service-body">We secure the property and manage everything from acquisition to rental management, providing you with steady cash flow over time.</p>
         </div>
         <a href="mailto:robin@two16.ca" class="cta">Choose Your Investment Path</a>
-    </div>
-
-    <!-- Section 4: What You’re Looking For -->
-    <div class="section">
-        <h2 class="section-title">You Have the Capital. We Have the Deals.</h2>
-        <p class="section-body">
-            As an investor, you know where you want to go, but three key challenges may be holding you back:
-        </p>
-        <ul class="section-body">
-            <li><strong>Lack of access</strong> to high-value deals.</li>
-            <li><strong>Lack of time</strong> to find or manage these opportunities.</li>
-            <li><strong>Lack of specific market knowledge</strong> to evaluate and execute on deals.</li>
-        </ul>
-        <p class="section-body">
-            At BIG, we solve all three. We provide access to exclusive off-market opportunities, manage the entire process with expert precision, and align every opportunity with your financial goals.
-        </p>
-    </div>
-
-    <!-- Section 5: Why It Works -->
-    <div class="section">
-        <h2 class="section-title">Why Our Method Works</h2>
-        <p class="section-body">
-            Our approach is built on simplicity and expertise. We curate opportunities based on deep market knowledge and robust analysis, ensuring every deal is aligned with your goals. We eliminate the guesswork and deliver impactful results. From flips to long-term holds, our method ensures you grow your wealth without the stress.
-        </p>
-        <h3 class="section-subheading">Our network, our expertise, your success.</h3>
-    </div>
-
-    <!-- Section 6: How We Create Value -->
-    <div class="services-section">
-        <h2 class="section-title">How We Create Value</h2>
-        <div class="service">
-            <h3 class="service-title">Off-Market Expertise</h3>
-            <p class="service-body">We find hidden, high-potential off-market properties and deliver exclusive, wholesale opportunities directly to you.</p>
-        </div>
-        <div class="service">
-            <h3 class="service-title">Strategic Investor Alignment</h3>
-            <p class="service-body">We tailor every opportunity to fit your financial goals, whether you’re after fast returns or long-term investments.</p>
-        </div>
-        <div class="service">
-            <h3 class="service-title">Developer Collaborations</h3>
-            <p class="service-body">Through partnerships with developers, we turn bold visions into reality, built on trust, transparency, and shared success.</p>
-        </div>
-    </div>
-
-    <!-- Section 7: Call to Action -->
-    <div class="cta-footer">
-        <h2 class="cta-footer-title">Your Next BIG Move Starts Here</h2>
-        <p>Don’t let lack of time, access, or knowledge hold you back. Let BIG Property Services guide you through lucrative off-market deals, expertly managed investments, and opportunities that drive real results.</p>
-        <a href="mailto:robin@two16.ca" class="cta-footer-button">Start Your Next BIG Deal Today</a>
     </div>
 
     <!-- Footer -->

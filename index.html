@@ -41,7 +41,7 @@
 
         /* Hero Section */
         .hero-section {
-            background-color: #155E95;
+            background-color: #2a3b55; /* Updated background color */
             padding: 80px 20px;
             text-align: center;
             color: #fff;
@@ -105,20 +105,37 @@
         .method-steps {
             max-width: 900px;
             margin: 0 auto;
-            text-align: left;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
         }
 
         .step {
+            background-color: #f0f0f0;
+            padding: 40px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-number {
+            font-size: 36px;
+            color: #CA6F00;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .step-title {
             font-size: 22px;
             font-weight: bold;
             color: #CA6F00;
-            margin: 20px 0;
+            margin-bottom: 10px;
         }
 
         .step-text {
             font-size: 18px;
             color: #555;
-            margin-bottom: 20px;
         }
 
         /* Section 3: Our Services */
@@ -128,13 +145,20 @@
             text-align: center;
         }
 
+        .services-columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
         .service {
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 40px;
             border-radius: 10px;
-            margin: 20px auto;
-            max-width: 300px;
+            width: 30%;
             text-align: left;
         }
 
@@ -284,31 +308,40 @@
     <div class="section">
         <h2 class="section-title">The BIG Method: Simple. Powerful. Proven.</h2>
         <div class="method-steps">
-            <div class="step">Find the Deal</div>
-            <p class="step-text">We tap into our network to uncover high-potential, off-market properties.</p>
-
-            <div class="step">Analyze the Opportunity</div>
-            <p class="step-text">Through rigorous due diligence and market analysis, we do all the heavy lifting so you don’t have to.</p>
-
-            <div class="step">Deliver Results</div>
-            <p class="step-text">Whether it’s a fast flip or a long-term rental, we handle the execution, maximizing value and minimizing stress.</p>
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Find the Deal</h3>
+                <p class="step-text">We tap into our network to uncover high-potential, off-market properties.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Analyze the Opportunity</h3>
+                <p class="step-text">Through rigorous due diligence and market analysis, we do all the heavy lifting so you don’t have to.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Deliver Results</h3>
+                <p class="step-text">Whether it’s a fast flip or a long-term rental, we handle the execution, maximizing value and minimizing stress.</p>
+            </div>
         </div>
     </div>
 
     <!-- Section 3: Our Services -->
     <div class="services-section">
         <h2 class="section-title">Our Services Tailored to Your Needs</h2>
-        <div class="service">
-            <h3 class="service-title">Self-Managed Deal</h3>
-            <p class="service-body">You invest. We find the deal. You manage the build. Get access to deals others can’t.</p>
-        </div>
-        <div class="service">
-            <h3 class="service-title">Hands-Free Build Management</h3>
-            <p class="service-body">We find the deal, you invest, and we manage the entire build for you. Hassle-free, just returns.</p>
-        </div>
-        <div class="service">
-            <h3 class="service-title">Long-Term Investment</h3>
-            <p class="service-body">We secure the property and manage everything from acquisition to rental management, providing you with steady cash flow over time.</p>
+        <div class="services-columns">
+            <div class="service">
+                <h3 class="service-title">Self-Managed Deal</h3>
+                <p class="service-body">You invest. We find the deal. You manage the build. Get access to deals others can’t.</p>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Hands-Free Build Management</h3>
+                <p class="service-body">We find the deal, you invest, and we manage the entire build for you. Hassle-free, just returns.</p>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Long-Term Investment</h3>
+                <p class="service-body">We secure the property and manage everything from acquisition to rental management, providing you with steady cash flow over time.</p>
+            </div>
         </div>
         <a href="mailto:robin@two16.ca" class="cta">Choose Your Investment Path</a>
     </div>

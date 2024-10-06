@@ -107,32 +107,80 @@
         background-color: #a45c00;
     }
 
-        /* Section 1: Our Promise */
-        .section {
-            padding: 80px 20px;
-            text-align: center;
-        }
+-----------------------
+<!-- Story Block Styling with Icons -->
 
-        .section-title {
+       
+       
+       .section-title {
             font-size: 42px;
             color: #333;
             font-weight: bold;
             margin-bottom: 30px;
         }
+       
+       
+    .story-block {
+        max-width: 800px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
 
-        .section-body {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 20px;
-            color: #555;
-            line-height: 1.8;
-        }
+    .story-title {
+        font-size: 28px;
+        color: #CA6F00;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+    }
 
         .section-subheading {
             font-size: 24px;
             color: #555;
             margin: 40px 0;
             font-weight: bold;
+        }
+
+    .section-body {
+        font-size: 20px;
+        color: #555;
+        line-height: 1.8;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    /* Story Block Spacing */
+    .section-body + .section-body {
+        margin-top: 20px;
+    }
+
+    /* Adjusting CTA Button Styling */
+    .cta-button {
+        background-color: #CA6F00;
+        color: white;
+        padding: 15px 30px;
+        font-size: 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #a45c00;
+    }
+
+       .section {
+            padding: 80px 20px;
+            text-align: center;
         }
 
         /* Section 2: The BIG Method */
@@ -480,18 +528,38 @@
         <a href="mailto:robin@two16.ca" class="cta-button">Let’s Start Your Next BIG Deal</a>
     </div>
 
-    <!-- Section 1: Our Promise -->
+  <!-- Section 1: Strategy and Trust - Story Layout with Icons -->
 <div class="section">
-    <h2 class="section-title">Strategy and Trust are our Foundation</h2>
-    <p class="section-body">At BIG Property Services, we focus on one thing: finding the best possible off-market deals. We don’t rely on chance; we take a strategic approach to understand exactly what you, the investor, are looking for. Once we know your goals, we go out and find the perfect match for your investment strategy.</p>
-    <p class="section-body">Our niche? Single-family off-market properties that offer high potential for short-term gains. Whether it’s a property primed for a fix and flip or one that needs to be torn down and rebuilt into something new and amazing, we specialize in turning these deals into quick returns—often within a year. This focused approach allows us to create bigger, faster returns for our investors.</p>
-    <p class="section-body">While long-term holds aren't our primary focus, if that’s what you’re after, we’ll use our expertise to find those opportunities for you. Because we know our niche so well, we’ve been able to grow a deep and strong network of connections, bringing the right deals directly to us—and in turn, to you.</p>
-    <p class="section-body">At BIG, strategy leads the way, and trust is the foundation we build on. With transparency at every step, you’ll always know that your investments are in good hands, from the first interaction to the final execution.</p>
-    <h3 class="section-subheading">We move you from uncertainty to action—secure in the knowledge that your money is working hard for you.</h3>
+    <h2 class="section-title">Strategy and Trust Are Our Foundation</h2>
+    
+    <!-- Block 1: Intro - Focus Icon -->
+    <div class="story-block">
+        <h3 class="story-title"><img src="focus-icon.png" alt="Focus Icon" class="icon"> Our Focus: Off-Market Deals</h3>
+        <p class="section-body">At BIG Property Services, we focus on one thing: finding the best possible off-market deals. We take a strategic approach to understand exactly what you, the investor, are looking for. Once we know your goals, we find the perfect match for your investment strategy.</p>
+    </div>
+    
+    <!-- Block 2: Our Niche - Growth Icon -->
+    <div class="story-block">
+        <h3 class="story-title"><img src="growth-icon.png" alt="Growth Icon" class="icon"> Our Niche: Short-Term Gains</h3>
+        <p class="section-body">Our expertise lies in single-family off-market properties that offer high potential for short-term gains. Whether it's a fix-and-flip or a tear-down and rebuild, we specialize in quick returns—often within a year—maximizing your investment’s value.</p>
+    </div>
+    
+    <!-- Block 3: Tailored to Your Needs - Custom Icon -->
+    <div class="story-block">
+        <h3 class="story-title"><img src="custom-icon.png" alt="Tailored Icon" class="icon"> Tailored to Your Needs</h3>
+        <p class="section-body">While long-term holds aren’t our primary focus, if that’s what you’re after, we’ll use our deep expertise to find those opportunities for you. Our niche focus allows us to grow a strong network of connections, bringing the right deals directly to us—and to you.</p>
+    </div>
+    
+    <!-- Block 4: Transparency and Trust - Trust Icon -->
+    <div class="story-block">
+        <h3 class="story-title"><img src="trust-icon.png" alt="Trust Icon" class="icon"> Trust and Transparency</h3>
+        <p class="section-body">At BIG, strategy leads the way, and trust is the foundation. With full transparency at every step, you can be confident that your investments are in good hands, from first interaction to final execution.</p>
+    </div>
+    
+    <!-- Call to Action Button -->
     <br>
     <a href="mailto:robin@two16.ca" class="cta-button" style="display: inline-block; margin-top: 40px;">Build Your Legacy with BIG</a>
 </div>
-
 
     <!-- Section 2: The BIG Method -->
     <div class="section">

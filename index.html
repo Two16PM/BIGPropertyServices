@@ -387,8 +387,17 @@
     .footer a:hover {
         text-decoration: underline;
     }
-        /* Responsive Layout */
+       /* Responsive adjustments for mobile */
         @media (max-width: 768px) {
+            body {
+                padding: 0 15px;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
             .hero-title {
                 font-size: 36px;
             }
@@ -398,8 +407,18 @@
             }
 
             .cta-button {
-                padding: 15px 30px;
                 font-size: 18px;
+                padding: 15px 30px;
+            }
+
+            .method-section {
+                flex-direction: column; /* Stack method section items */
+                text-align: center;
+            }
+
+            .method-left, .method-right {
+                padding: 0;
+                margin-bottom: 20px;
             }
 
             .section-title {
@@ -410,6 +429,22 @@
                 font-size: 16px;
             }
 
+            .story-block, .services-columns, .split-section {
+                flex-direction: column; /* Stack elements vertically */
+                gap: 20px;
+            }
+
+            .value-box {
+                width: 100%; /* Stack value boxes */
+                margin-bottom: 20px;
+            }
+
+            .footer {
+                padding: 20px;
+                font-size: 16px;
+            }
+    
+    
             .method-steps {
                 flex-direction: column;
                 gap: 40px;

@@ -178,44 +178,45 @@
             text-align: center;
         }
 
-        /* Section 2: The BIG Method */
-        .method-steps {
-            background-color: #2A3B55;
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+    /* Section 2: The BIG Method */
+    .method-section {
+        background-color: #2A3B55;
+        padding: 60px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-        }
+    .method-left {
+        flex: 1;
+        color: white;
+        padding-right: 40px;
+    }
 
-        .step {
-            background-color: #f0f0f0;
-            padding: 40px;
-            border-radius: 10px;
-            width: 30%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .method-left h3 {
+        font-size: 30px;
+        color: #CA6F00;
+        margin-bottom: 20px;
+    }
 
-        .step-number {
-            font-size: 36px;
-            color: #CA6F00;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+    .method-left p {
+        font-size: 18px;
+        color: white;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
 
-        .step-title {
-            font-size: 22px;
-            font-weight: bold;
-            color: #CA6F00;
-            margin-bottom: 10px;
-        }
+    .method-right {
+        flex: 1;
+        text-align: center;
+        padding-left: 40px;
+    }
 
-        .step-text {
-            font-size: 18px;
-            color: #555;
-        }
+    .method-right h2 {
+        font-size: 42px;
+        color: #fff;
+        font-weight: bold;
+    }  
 
         /* Section 3: Our Services */
         .services-section {
@@ -557,25 +558,21 @@
     <a href="mailto:robin@two16.ca" class="cta-button" style="display: inline-block; margin-top: 40px;">Build Your Legacy with BIG</a>
 </div>
 
-    <!-- Section 2: The BIG Method -->
-    <div class="section">
-        <h2 class="section-title">The BIG Method: Simple. Powerful. Repeatable</h2>
-        <div class="method-steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3 class="step-title">Find the Deal</h3>
-                <p class="step-text">We tap into our network to uncover high-potential, off-market properties, which no one else is accessing.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3 class="step-title">Curated Analysis</h3>
-                <p class="step-text">Based on our agreed upon strategy, we do all the heavy lifting to understand and evaluate every aspect of your deal.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3 class="step-title">Deliver Results</h3>
-                <p class="step-text">From a fast flip to a long-term rental, we handle the execution and management, with clear and continuous communication. Maximizing value and minimizing stress.</p>
-            </div>
+     <!-- Section 2: The BIG Method -->
+    <div class="method-section">
+        <!-- Left side with points 1, 2, 3 -->
+        <div class="method-left">
+            <h3>1. Find the Deal</h3>
+            <p>We tap into our network to uncover high-potential, off-market properties that no one else is accessing.</p>
+            <h3>2. Curated Analysis</h3>
+            <p>Based on our agreed strategy, we do the heavy lifting to evaluate every aspect of your deal.</p>
+            <h3>3. Deliver Results</h3>
+            <p>From fast flips to long-term rentals, we handle the execution with clear communication, maximizing value and minimizing stress.</p>
+        </div>
+
+        <!-- Right side with the title -->
+        <div class="method-right">
+            <h2>The BIG Method: Simple. Powerful. Repeatable</h2>
         </div>
     </div>
 

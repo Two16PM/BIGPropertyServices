@@ -27,16 +27,22 @@
         padding: 0;
         color: #333;
     }
-
-           /* Header Section with seamless gradient background */
-    .header {
+  /* Unified background gradient for header and hero section */
+        .unified-background {
         background: linear-gradient(135deg, #2a3b55, #1b4965); /* Gradient background */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        color: white;
+            color: white;
+            margin: 0;
+            padding: 0;
+    }
+
+
+        /* Header Styles */
+        .header {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
     }
 
     .logo {
@@ -68,13 +74,14 @@
     .header-contact a:hover {
         text-decoration: underline;
     }
-       /* Hero Section - seamless with the header */
-    .hero-section {
-        background: linear-gradient(135deg, #2a3b55, #1b4965); /* Same gradient background as header */
-        padding: 100px 20px;
-        text-align: center;
-        color: #fff;
-    }
+      
+       /* Hero Section */
+        .hero-section {
+            padding: 120px 40px;
+            text-align: center;
+            margin-top: -40px; /* Eliminate the division between header and hero */
+        } 
+       
         .hero-text {
         width: 66%;
         margin: 0 auto;

@@ -374,9 +374,11 @@
             margin-top: 60px; /* Increased margin for better spacing */
         }
 
-       .cta-image {
-    text-align: center;
-    width: 100%;
+       .cta-image img {
+    width: 50%; /* This will keep the image 50% width on desktop */
+    height: auto;
+    max-width: none; /* Ensure max-width doesn't restrict */
+    border-radius: 10px;
 }
 
         /* Footer */
@@ -524,7 +526,7 @@
             
 
     .cta-image img {
-        width: 100% !important;  /* Force the image to take up full width */
+        width: 85% !important;  /* Force the image to take up full width */
         height: auto !important; /* Maintain aspect ratio */
         max-width: none !important;  /* Remove any max-width constraints */
         border-radius: 10px;

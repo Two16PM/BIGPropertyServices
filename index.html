@@ -496,22 +496,27 @@
     }
 
     .header {
-        padding: 10px;
-    }
+            flex-direction: column;
+            text-align: center;
+        }
 
     .hero-title {
         font-size: 36px; /* Reduce font size for hero title on mobile */
     }
 
     .hero-subtitle {
-        font-size: 24px; /* Adjust subtitle */
+        font-size: 26px; /* Adjust subtitle */
     }
 
     .cta-button {
-        font-size: 18px; /* Adjust CTA button size */
-        padding: 15px 30px;
-    }
+            font-size: 18px;
+            padding: 15px 30px;
+        }
 
+    .cta-image img {
+            max-width: 75%; /* Maintain 75% width on mobile */
+        }
+    
     .section {
         padding: 40px 10px; /* Adjust section padding */
     }
@@ -538,10 +543,10 @@
         font-size: 32px; /* Adjust section titles on mobile */
     }
 
-    .footer {
-        padding: 20px;
-        font-size: 16px; /* Adjust footer text size */
-    }
+    .footer p {
+            white-space: normal; /* Allow wrapping on mobile if necessary */
+            text-align: center;
+        }
 }
 
     </style>

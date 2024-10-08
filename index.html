@@ -59,9 +59,10 @@
 
     /* Added email and phone number to header */
     .header-contact {
-        font-size: 18px;
-        text-align: right;
-        color: white;
+    font-size: 18px;
+    text-align: right;
+    color: white;
+    white-space: nowrap; /* Ensure it stays on one line on wider screens */
 
     }
 
@@ -395,28 +396,42 @@
         text-decoration: underline;
     }
        /* Responsive adjustments for mobile */
-        @media (max-width: 768px) {
-            body {
-                padding: 0 15px;
-            }
+      @media (max-width: 768px) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0;
+    }
 
-            .header {
-                flex-direction: column;
-                text-align: center;
-            }
+    .header-contact {
+        white-space: normal; /* Allow wrapping on mobile */
+        text-align: center;
+    }
 
+ .header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+          
             .hero-title {
                 font-size: 36px;
             }
 
+         
             .hero-subtitle {
                 font-size: 24px;
             }
 
+    
+
             .cta-button {
                 font-size: 18px;
                 padding: 15px 30px;
+                white-space: nowrap; /* Prevents wrapping */
+
             }
+
 
             .method-section {
                 flex-direction: column; /* Stack method section items */
@@ -431,7 +446,17 @@
                 order: -1; /* Move the title above the points */
                 margin-bottom: 20px;
             }
-            .section-title {
+             .section {
+        padding: 40px 10px; /* Adjust section padding */
+    }
+
+    .split-section {
+        flex-direction: column;
+        padding: 40px 10px; /* Adjust padding for split sections */
+    }
+
+          
+          .section-title {
                 font-size: 32px;
             }
 
@@ -449,12 +474,7 @@
                 margin-bottom: 20px;
             }
 
-            .footer {
-                padding: 20px;
-                font-size: 16px;
-            }
-    
-    
+        
             .method-steps {
                 flex-direction: column;
                 gap: 40px;
@@ -483,66 +503,20 @@
                 width: 100%;
             }
 
+
             .cta-section .section-title {
                 font-size: 32px;
             }
-        /* Existing Global Styles... */
-
-@media (max-width: 768px) {
-    body {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0;
+            
+            .cta-image img {
+        max-width: 60%; /* Maintain 60% width on mobile */
     }
 
-    .header {
-            flex-direction: column;
-            text-align: center;
-        }
-
-    .hero-title {
-        font-size: 36px; /* Reduce font size for hero title on mobile */
-    }
-
-    .hero-subtitle {
-        font-size: 26px; /* Adjust subtitle */
-    }
-
-    .cta-button {
-            font-size: 18px;
-            padding: 15px 30px;
-        }
-
-    .cta-image img {
-            max-width: 75%; /* Maintain 75% width on mobile */
-        }
-    
-    .section {
-        padding: 40px 10px; /* Adjust section padding */
-    }
-
-    .split-section {
-        flex-direction: column;
-        padding: 40px 10px; /* Adjust padding for split sections */
-    }
-
-    .left-column,
-    .right-column {
-        padding-right: 0;
-        padding-left: 0;
-        margin: 0;
-    }
-
-    .value-box {
-        width: 100%;
-        margin-bottom: 20px; /* Ensure that value boxes stack nicely */
-    }
-
-    /* Section Title Adjustments for Mobile */
-    .section-title {
-        font-size: 32px; /* Adjust section titles on mobile */
-    }
-
+ .footer {
+                padding: 20px;
+                font-size: 16px;
+            }
+   
     .footer p {
             white-space: normal; /* Allow wrapping on mobile if necessary */
             text-align: center;

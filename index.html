@@ -25,27 +25,23 @@
         background-color: #F5F5F5;
         margin: 0;
         padding: 0;
-
+        color: #333;
     }
-  /* Unified background gradient for header and hero section */
-    .unified-background {
-        background: linear-gradient(180deg, #1b4965, #2A3B55); /* Dark blue gradient background */
+  /* Unified Section for Header and Hero */
+    .unified-section {
+        background: linear-gradient(180deg, #1b4965, #2A3B55); /* Gradient background */
         color: white;
-        margin: 0;
         padding: 0;
-
-    }
-
-    /* Header Styles */
-    .header {
-       background: inherit; /* Inherit the gradient from the parent */
-        padding: 40px;
+        margin: 0;
+       
+          /* Header Section */
+     .header {
+        padding: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0; /* Remove margin */
-
-
+        margin: 0;
+        color: white;
     }
 
     .logo {
@@ -77,24 +73,18 @@
     .header-contact a:hover {
         text-decoration: underline;
     }
-      
-    /* Hero Section */
-    .hero-section {
-        background: inherit; /* Inherit the gradient from the parent */
-        padding: 120px 40px;
+        /* Hero Section */
+      .hero-section {
+        padding: 120px 20px;
         text-align: center;
-        margin: 0; /* Remove margin to make it seamless with the header */
-        min-height: 400px; /* Ensure enough height for the hero section */
-        
-    } 
-       
-    .hero-text {
+    }
+        .hero-text {
         width: 66%;
         margin: 0 auto;
         text-align: center;
     }
 
-    .hero-title {
+       .hero-title {
         font-size: 56px;
         font-weight: bold;
         margin-bottom: 20px;
@@ -555,8 +545,8 @@
 </head>
 <body>
 
-    <!-- Wrapper for unified background -->
-    <div class="unified-background">
+  <!-- Unified section for Header and Hero -->
+    <div class="unified-section">
         <!-- Header Section -->
         <div class="header">
             <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
@@ -566,7 +556,7 @@
             </div>
         </div>
 
-    <!-- Hero Section -->
+        <!-- Hero Section -->
         <div class="hero-section">
             <h1 class="hero-title">Access Lucrative Off-Market Deals for BIG Results</h1>
             <h2 class="hero-subtitle">TRUST. VALUE. LEVERAGE</h2>

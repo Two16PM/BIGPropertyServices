@@ -28,15 +28,20 @@
         color: #333;
     }
 
+        /* Unified Section for Header and Hero */
+    .unified-section {
+        background: linear-gradient(180deg, #1b4965, #2A3B55); /* Gradient background */
+        color: white;
+        padding: 0;
+        margin: 0;
+        }
           /* Header Section */
     .header {
-        background-color: #F5F5F5;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+         padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
     .logo {
         width: 150px;
@@ -68,12 +73,12 @@
         text-decoration: underline;
     }
         /* Hero Section */
-        .hero-section {
-        background-color: #2a3b55; /* Updated background color */
-        padding: 80px 20px;
-        text-align: center;
-        color: #fff;
-    }
+      .hero-section {
+            padding: 120px 40px;
+            text-align: center;
+            margin-top: -40px; /* Eliminate the division between header and hero */
+        }
+       
         .hero-text {
         width: 66%;
         margin: 0 auto;
@@ -541,28 +546,28 @@
 </head>
 <body>
 
-    <!-- Header Section -->
-   <div class="header">
-        <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
-        <h1 class="header-tagline"><span class="highlight">Be Bold.</span> Build BIG.</h1>
-        <!-- Contact details added to the header -->
-        <div class="header-contact">
-            <a href="mailto:robin@buildwithbig.ca">robin@buildwithbig.ca</a> | <a href="tel:+14037015759">403-701-5759</a>
+   <!-- Unified section for Header and Hero -->
+    <div class="unified-section">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
+            <h1 class="header-tagline"><span class="highlight">Be Bold.</span> Build BIG.</h1>
+            <div class="header-contact">
+                <a href="mailto:robin@buildwithbig.ca">robin@buildwithbig.ca</a> | <a href="tel:+14037015759">403-701-5759</a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1 class="hero-title">Access Lucrative Off-Market Deals for BIG Results</h1>
+            <h2 class="hero-subtitle">TRUST. VALUE. LEVERAGE</h2>
+            <div class="hero-text">
+                <h3>BIG Property Services gives you access to exclusive off-market deals, thorough due diligence, and market expertise—to make your real estate investments thrive.</h3>
+            </div>
+            <a href="mailto:robin@buildwithbig.ca" class="cta-button">Let’s Start Your Next BIG Deal</a>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <h1 class="hero-title">Access Lucrative Off-Market Deals for BIG Results</h1>
-        <br>
-        <h2 class="hero-subtitle">TRUST. VALUE. LEVERAGE</h2>
-        <br>
-        <div class="hero-text">
-            <h3>BIG Property Services gives you access to exclusive off-market deals, thorough due diligence, and market expertise—to make your real estate investments thrive.</h3>
-        </div>
-        <br><br><br>
-        <a href="mailto:robin@buildwithbig.ca" class="cta-button">Let’s Start Your Next BIG Deal</a>
-    </div>
 
   <!-- Section 1: Strategy and Trust - Story Layout with Icons -->
 <div class="section">

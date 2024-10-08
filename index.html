@@ -395,7 +395,8 @@
     .footer a:hover {
         text-decoration: underline;
     }
-       /* Responsive adjustments for mobile */
+     
+    /* Responsive adjustments for mobile */
       @media (max-width: 768px) {
     body {
         padding-left: 15px;
@@ -403,9 +404,17 @@
         margin: 0;
     }
 
-    .header-contact {
-        white-space: normal; /* Allow wrapping on mobile */
+   .header-contact {
+        white-space: normal; /* Allow wrapping */
         text-align: center;
+        display: flex;
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center;
+    }
+
+    .header-contact a {
+        margin-left: 0; /* Remove the left margin for better stacking */
+        margin-bottom: 5px; /* Add some space between the items */
     }
 
  .header {
@@ -520,9 +529,16 @@
             }
    
     .footer p {
-            white-space: normal; /* Allow wrapping on mobile if necessary */
-            text-align: center;
-        }
+        white-space: normal; /* Allow wrapping */
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Stack email and phone vertically */
+        align-items: center;
+    }
+
+    .footer a {
+        margin-bottom: 5px; /* Add some space between the links */
+    }
 }
 
     </style>

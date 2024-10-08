@@ -517,8 +517,14 @@
                 font-size: 32px;
             }
             
-            .cta-image img {
-        max-width: 80%; /* Increase the image size to 80% of the screen width on mobile */
+            .cta-image {
+        text-align: center;
+        width: 100%; /* Ensure the container uses full width */
+    }
+
+    .cta-image img {
+        width: 100%; /* Make sure the image takes up the full width of its container */
+        max-width: 80%; /* Set a max width for scaling */
         height: auto;
         border-radius: 10px;
     }

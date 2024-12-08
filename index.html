@@ -20,6 +20,8 @@
             background-color: #f4f1ed; /* Main background color */
             color: #4a412f; /* Main font color */
             line-height: 1.6;
+            padding: 0;
+            margin: 0;
         }
 
         .container {
@@ -151,6 +153,14 @@
             text-decoration: underline;
         }
 
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .below-the-fold {
+                flex-direction: column;
+                padding: 40px 0;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -173,16 +183,26 @@
             <!-- Left Section for Sellers -->
             <div class="section">
                 <h2>For Sellers</h2>
-                <p>Are you looking to sell your property quickly and hassle-free? At HIJK Property Group, we buy distressed and investment-ready properties for cash. No fees, no commissions, and no long waiting periods. Just a fair offer and a fast closing process.</p>
-                <p>We make the selling process simple and transparent, giving you peace of mind throughout every step. Whether your property needs work or you're simply ready to move on, we're here to help.</p>
+                <p><strong>Cash Offers:</strong> We buy properties ready for investment, no matter the condition.</p>
+                <p><strong>Quick Closures:</strong> Need to sell fast? We close deals quickly and efficiently.</p>
+                <p><strong>As-Is Sales:</strong> Whether it’s a distressed property or you simply need to sell, we buy as-is.</p>
+                <p><strong>Value Through Renovations & New Builds:</strong> We transform properties, adding value with renovations and new construction.</p>
+                <p><strong>Minimal Effort Required:</strong> Our process is streamlined, with little involvement needed from you, the seller.</p>
                 <a href="mailto:robin@buildwithbig.ca" class="cta-button">Get Your Cash Offer Today</a>
             </div>
 
             <!-- Right Section for Investors -->
             <div class="section">
                 <h2>For Investors</h2>
-                <p>Partner with HIJK Property Group to unlock exclusive off-market properties with high return potential. We specialize in wholesale deals, flips, and new construction opportunities that align with your investment strategy.</p>
-                <p>Looking for joint ventures or long-term partnerships? We work with investors to source great deals and collaborate on profitable development projects. Our expertise and network give you access to opportunities others can’t find.</p>
+                <p><strong>Smart Property Acquisitions:</strong> We buy high-potential properties at the right price.</p>
+                <p><strong>Maximize Returns:</strong> Through flips and new construction, we drive substantial value on every investment.</p>
+                <p><strong>Flexible Investment Options:</strong>
+                    <ul>
+                        <li><strong>Buy Outright:</strong> Purchase our exclusive deals directly.</li>
+                        <li><strong>Joint Venture Partnership:</strong> Partner with us to manage the project and share in the returns.</li>
+                    </ul>
+                </p>
+                <p><strong>Full Control or Hassle-Free Management:</strong> You can own the process or trust us to manage it for you—either way, we deliver the results.</p>
                 <a href="mailto:robin@buildwithbig.ca" class="cta-button">Join Our Investor Network</a>
             </div>
         </section>

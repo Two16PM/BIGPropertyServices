@@ -150,11 +150,64 @@
             text-decoration: underline;
         }
 
+        /* How We Create Value Section */
+        .how-we-create-value {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 80px;
+            padding: 40px 0;
+        }
+
+        .how-we-create-value h2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #4a412f;
+            flex: 1;
+        }
+
+        .how-we-create-value .value-text {
+            flex: 2;
+            font-size: 18px;
+            color: #4a412f;
+            line-height: 1.8;
+        }
+
+        .how-we-create-value .value-text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .how-we-create-value .value-text li {
+            font-size: 18px;
+            color: #4a412f;
+            margin-bottom: 10px;
+        }
+
+        .how-we-create-value img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
         /* Responsive Styles */
         @media (max-width: 768px) {
             .below-the-fold {
                 flex-direction: column;
                 padding: 40px 0;
+            }
+
+            .how-we-create-value {
+                flex-direction: column;
+            }
+
+            .how-we-create-value h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .how-we-create-value .value-text {
+                text-align: center;
             }
         }
 
@@ -203,6 +256,20 @@
                 <a href="mailto:robin@buildwithbig.ca" class="cta-button">Join Our Investor Network</a>
             </div>
         </section>
+
+        <!-- How We Create Value Section -->
+        <section class="how-we-create-value">
+            <h2>How We Create Value</h2>
+            <div class="value-text">
+                <p><strong>Off-Market Expertise:</strong> We find hidden, high-potential off-market properties and deliver exclusive, wholesale opportunities directly to you.</p>
+                <p><strong>Strategic Investor Alignment:</strong> We tailor every opportunity to fit your financial goals, whether you’re after fast returns or long-term investments.</p>
+                <p><strong>Developer Collaborations:</strong> Through partnerships with developers, we turn bold visions into reality, built on trust, transparency, and shared success.</p>
+            </div>
+            <div>
+                <img src="pexels-ninobur-17602526.jpg" alt="Property Development" />
+            </div>
+        </section>
+
     </div>
 
 </body>

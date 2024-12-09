@@ -65,7 +65,7 @@
             line-height: 1.6;
         }
 
-      /* Two Columns */
+       /* Two Columns */
 .two-columns {
     display: flex;
     flex-direction: column;
@@ -78,19 +78,25 @@
 @media (min-width: 768px) {
     .two-columns {
         flex-direction: row;
-        justify-content: space-between;
     }
 }
 
 .column {
     flex: 1;
-    display: flex;
-    flex-direction: column;
     padding: 20px;
-    background-color: #e0d6c7;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.column-left {
+    background-color: #e0d6c7;
 }
 
 .column-right {
@@ -98,22 +104,11 @@
 }
 
 .highlight {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    padding: 10px;
     margin: 10px 0;
     background-color: #ffffff;
     border-left: 5px solid #4a412f;
     border-radius: 5px;
-    text-align: center;
-    min-height: 120px; /* Ensures all cards are the same height */
-}
-
-.cta-container {
-    text-align: center;
-    margin-top: 20px;
 }
 
 .cta-button {
@@ -131,21 +126,6 @@
 .cta-button:hover {
     background-color: #372f23;
 }
-
-/* Alignment for CTAs */
-.cta-container {
-    margin-top: 20px;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .cta-container {
-        margin-top: 0;
-        position: relative;
-        bottom: -20px;
-    }
-}
-
 
         /* Footer */
         footer {
@@ -180,47 +160,51 @@
             <h2>Partners can buy properties directly from us or collaborate to share profits and success.</h2>
         </div>
         <!-- Two Columns -->
-<div class="two-columns">
-    <!-- Left Column -->
-    <div class="column column-left">
-        <h2>For Homeowners</h2>
-        <div class="highlight">
-            <p><strong>💰 Financial Relief:</strong> Get a fair cash offer for your property without the hassle of traditional selling.</p>
-        </div>
-        <div class="highlight">
-            <p><strong>🏚️ Sell As-Is:</strong> No need to worry about repairs or renovations—we buy your property in its current condition.</p>
-        </div>
-        <div class="highlight">
-            <p><strong>⏳ Fast and Simple Process:</strong> Our streamlined approach ensures a quick sale.</p>
-        </div>
-        <div class="highlight">
-            <p><strong>🤝 Compassionate Support:</strong> We’re here to guide you every step of the way.</p>
-        </div>
-        <div class="cta-container">
-            <a href="#" class="cta-button">Get Your Offer</a>
-        </div>
-    </div>
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column column-left">
+                <h2>For Homeowners</h2>
+                <p>At HIJK, we understand that selling your home can be stressful, especially during challenging times. That’s why we’re here to provide a simple, fast, and compassionate solution. We help distressed homeowners turn their properties into cash quickly, offering financial relief, a smooth exit, and the opportunity for a fresh start.</p>
+                <div class="highlight">
+                    <p><strong>💰 Financial Relief:</strong> Get a fair cash offer for your property without the hassle of traditional selling.</p>
+                </div>
+                <div class="highlight">
+                    <p><strong>🏚️ Sell As-Is:</strong> No need to worry about repairs or renovations—we buy your property in its current condition.</p>
+                </div>
+                <div class="highlight">
+                    <p><strong>⏳ Fast and Simple Process:</strong> Our streamlined approach ensures a quick sale.</p>
+                </div>
+                <div class="highlight">
+                    <p><strong>🤝 Compassionate Support:</strong> We’re here to guide you every step of the way.</p>
+                </div>
+                <h3>How It Works</h3>
+                <ol>
+                    <li><strong>Tell Us About Your Home:</strong> Fill out our form with details about your property. We’ll prepare a competitive cash offer.</li>
+                    <li><strong>Receive and Accept Our Offer:</strong> We’ll contact you with a fair, no-obligation offer. Take your time to review it.</li>
+                    <li><strong>Close and Get Paid:</strong> Finalize the process and set a closing date. Receive your cash quickly and securely.</li>
+                </ol>
+                <a href="#" class="cta-button">Get Your Offer</a>
+            </div>
 
-    <!-- Right Column -->
-    <div class="column column-right">
-        <h2>For Investors</h2>
-        <div class="highlight">
-            <p><strong>🎯 Our Focus: Off-Market Properties:</strong> We excel at identifying and securing the best off-market deals. These exclusive opportunities give you a competitive edge.</p>
+            <!-- Right Column -->
+            <div class="column column-right">
+                <h2>For Investors</h2>
+                <p>At HIJK Property Group, we specialize in connecting investors with high-value opportunities that deliver results. Our strategic focus, niche expertise, and commitment to transparency make us the ideal partner for your real estate investment journey.</p>
+                <div class="highlight">
+                    <p><strong>🎯 Our Focus: Off-Market Properties:</strong> We excel at identifying and securing the best off-market deals. These exclusive opportunities give you a competitive edge.</p>
+                </div>
+                <div class="highlight">
+                    <p><strong>💡 Our Niche: Short-Term Gains:</strong> Our expertise lies in single-family properties with high potential for short-term returns. Whether it’s a fix-and-flip or a tear-down and rebuild, we’re committed to helping you realize significant gains, often within a year.</p>
+                </div>
+                <div class="highlight">
+                    <p><strong>📌 Tailored to Your Investment Goals:</strong> Your goals are unique, and so is our approach. While short-term gains are our specialty, we also find opportunities that align with your specific investment strategy.</p>
+                </div>
+                <div class="highlight">
+                    <p><strong>🤝 Trust and Transparency:</strong> Your success is built on a foundation of trust. At HIJK, we prioritize transparency, ensuring you have all the support you need.</p>
+                </div>
+                <a href="#" class="cta-button">Join Our Network</a>
+            </div>
         </div>
-        <div class="highlight">
-            <p><strong>💡 Our Niche: Short-Term Gains:</strong> Our expertise lies in single-family properties with high potential for short-term returns. Whether it’s a fix-and-flip or a tear-down and rebuild, we’re committed to helping you realize significant gains, often within a year.</p>
-        </div>
-        <div class="highlight">
-            <p><strong>📌 Tailored to Your Investment Goals:</strong> Your goals are unique, and so is our approach. While short-term gains are our specialty, we also find opportunities that align with your specific investment strategy.</p>
-        </div>
-        <div class="highlight">
-            <p><strong>🤝 Trust and Transparency:</strong> Your success is built on a foundation of trust. At HIJK, we prioritize transparency, ensuring you have all the support you need.</p>
-        </div>
-        <div class="cta-container">
-            <a href="#" class="cta-button">Join Our Network</a>
-        </div>
-    </div>
-</div>
     </div>
 
     <!-- Footer -->

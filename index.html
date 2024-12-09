@@ -1,681 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIJK Property Group</title>
-    <link rel="icon" href="HIJK flavicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="HIJK Property Group - Unlock Lucrative Off-Market Properties with HIJK">
-    <meta property="og:description" content="HIJK brings you access to exclusive properties off-market, saving you time, delivering solid returns to earn your trust along your journey.">
-    <meta property="og:image" content="HIJK preview image.png">
-    <meta property="og:url" content="https://www.buildwithbig.ca">
-    <meta property="og:type" content="website">
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="HIJK Property Group - Unlock Lucrative Off-Market Properties with HIJK">
-    <meta name="twitter:description" content="Access exclusive properties off-market, expert management, and thrive with your real estate investment with BIG Property Company.">
-    <meta name="twitter:image" content="https://www.buildwithbig.ca/">
-</head>
-
-   <style>
-    body {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #f4f1ed;
-        margin: 0;
-        padding: 0;
-        color: #333;
-    }
-
-        /* Unified Section for Header and Hero */
-    .unified-section {
-        background: #f4f1ed
-        color: white;
-        padding: 0;
-        margin: 0;
-        }
-       
-       .header {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.logo {
-    display: block; 
-    margin: 0 auto;  
-    max-width: 45%;  
-    height: auto;      
-}
-
-    .highlight {
-        color: #CA6F00; /* Gold highlight */
-    }
-
-        /* Hero Section */
-      .hero-section {
-            padding: 120px 40px;
-            text-align: center;
-            margin-top: -40px; /* Eliminate the division between header and hero */
-        }
-       
-        .hero-text {
-        width: 66%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-       .hero-title {
-        font-size: 56px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    .hero-subtitle {
-        font-size: 30px;
-        margin-bottom: 30px;
-        color: #CA6F00;
-    }
-
-       .cta-button {
-        background-color: #CA6F00;
-        color: white;
-        padding: 20px 40px;
-        font-size: 22px;
-        border-radius: 8px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-       .cta-button:hover {
-        background-color: #a45c00;
-    }
-
-
-<!-- Story Block Styling with Icons -->
-       .section-title {
-            font-size: 42px;
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-       
-    .story-block {
-        max-width: 800px;
-        margin: 0 auto 40px;
-        text-align: center;
-    }
-
-    .story-title {
-        font-size: 28px;
-        color: #CA6F00;
-        font-weight: bold;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .icon {
-        width: 30px;
-        height: auto;
-        margin-right: 10px;
-    }
-
-        .section-subheading {
-            font-size: 24px;
-            color: #555;
-            margin: 40px 0;
-            font-weight: bold;
+    <link rel="icon" href="HIJK flevicon.png">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f1ed;
+            color: #4a412f;
+            margin: 0;
+            padding: 0;
         }
 
-    .section-body {
-        font-size: 20px;
-        color: #555;
-        line-height: 1.8;
-        margin: 0 auto;
-        max-width: 700px;
-    }
-
-    /* Story Block Spacing */
-    .section-body + .section-body {
-        margin-top: 20px;
-    }
-
-    /* Adjusting CTA Button Styling */
-    .cta-button {
-        color: white;
-        padding: 15px 30px;
-        font-size: 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-        background-color: #a45c00;
-    }
-
-       .section {
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-    /* Section 2: The HIJK Method */
-    .method-section {
-        background-color: #2C6183;
-        padding: 60px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .method-left {
-        flex: 1;
-        color: black;
-        padding-right: 40px;
-    }
-
-    .method-left h3 {
-        font-size: 30px;
-        color: #CA6F00;
-        margin-bottom: 20px;
-    }
-
-    .method-left p {
-        font-size: 18px;
-        color: black;
-        line-height: 1.6;
-        margin-bottom: 30px;
-    }
-
-    .method-right {
-        flex: 1;
-        text-align: center;
-        padding-left: 40px;
-    }
-
-    .method-right h2 {
-        font-size: 42px;
-        color: #CA6F00;
-        font-weight: bold;
-    }  
-
-        /* Section 3: Our Services */
-        .services-section {
-            background-color: #2C6183;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .services-title {
-            color: #fff; /* Text color changed to white */
-        }
-
-        .services-columns {
+        /* Hero section */
+        .hero {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
         }
 
-        .service {
-            background-color: white;
+        .hero img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .main-lines {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 50px;
+        }
+
+        /* Two-column section */
+        .two-columns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .two-columns {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: #e0d6c7;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            border-radius: 10px;
-            width: 30%;
-            text-align: left;
         }
 
-        .service-title {
-            font-size: 26px;
-            color: #CA6F00;
-            margin-bottom: 15px;
-            font-weight: bold;
+        .column h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
         }
 
-        .service-body {
-            font-size: 18px;
-            color: #555;
+        .column p {
+            margin-bottom: 10px;
             line-height: 1.6;
         }
 
-        /* Section 4: Challenges */
-        .challenges-section {
-            padding: 80px 20px;
-            text-align: center;
+        .column ul {
+            padding: 0;
+            list-style: none;
         }
 
-        .challenges-title {
-            font-size: 42px;
-            color: #333;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-
-        .challenges-body {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 20px;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .value-list {
-            text-align: left;
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 20px;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        .value-item {
-            margin-bottom: 20px;
-        }
-
-        .bold {
-            font-weight: bold;
-            color: #CA6F00;
-        }
-
-        .subheading {
-            font-size: 24px;
-            color: #555;
-            margin: 40px 0;
-            font-weight: bold;
-        }
-
-        /* Section 5: How We Create Value */
-        .value-columns {
+        .column ul li {
             display: flex;
-            justify-content: space-around;
-            gap: 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-            background-color: #2C6183; /* Dark blue background */
-        }
-
-        .value-box {
-            background-color: #f7f7f7;
-            padding: 30px;
-            border-radius: 10px;
-            width: 30%;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-
-        .value-heading {
-            font-size: 22px;
-            color: #CA6F00;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .value-description {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        /* Section 6: Call to Action with same background */
-        .cta-section {
-            background-color: #2C6183; /* Dark blue background */
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .cta-section .section-title {
-            font-size: 42px;
-            color: white;
-            font-weight: bold;
-        }
-
-       .cta-image img {
-    width: 50%; /* Set the image width to 50% for desktop */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: none; /* Ensure no max-width restrictions */
-    border-radius: 10px;
-}
-        .cta-section .section-body {
-            color: #f0f0f0;
-        }
-
-        .cta-section .cta {
-            background-color: #CA6F00;
-            color: white;
-            padding: 20px 40px;
-            font-size: 22px;
-            text-align: center;
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 60px; /* Increased margin for better spacing */
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
         }
 
         /* Footer */
-    .footer {
-        background: #f4f1ed;
-        color: white;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .footer p {
-        font-size: 18px;
-        color: #4a412f;
-    }
-
-    .footer a {
-        color: #4a412f;
-        text-decoration: none;
-    }
-
-    .footer a:hover {
-        text-decoration: underline;
-    }
-     
-    /* Responsive adjustments for mobile */
-      @media (max-width: 768px) {
-    body {
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0;
-    }
-
-
- .header {
-            flex-direction: column;
+        footer {
             text-align: center;
+            padding: 20px;
+            background-color: #4a412f;
+            color: #f4f1ed;
         }
 
-          
-            .hero-title {
-                font-size: 36px;
-            }
-
-         
-            .hero-subtitle {
-                font-size: 24px;
-            }
-
-    
-
-            .cta-button {
-                font-size: 18px;
-                padding: 15px 30px;
-                white-space: nowrap; /* Prevents wrapping */
-
-            }
-
-
-            .method-section {
-                flex-direction: column; /* Stack method section items */
-                text-align: center;
-            }
-
-            .method-left, .method-right {
-                padding: 0;
-                margin-bottom: 20px;
-            }
-            .method-right {
-                order: -1; /* Move the title above the points */
-                margin-bottom: 20px;
-            }
-             .section {
-        padding: 40px 10px; /* Adjust section padding */
-    }
-
-    .split-section {
-        flex-direction: column;
-        padding: 40px 10px; /* Adjust padding for split sections */
-    }
-
-          
-          .section-title {
-                font-size: 32px;
-            }
-
-            .section-body {
-                font-size: 16px;
-            }
-
-            .story-block, .services-columns, .split-section {
-                flex-direction: column; /* Stack elements vertically */
-                gap: 20px;
-            }
-
-            .value-box {
-                width: 100%; /* Stack value boxes */
-                margin-bottom: 20px;
-            }
-
-        
-            .method-steps {
-                flex-direction: column;
-                gap: 40px;
-            }
-
-            .step {
-                width: 100%;
-            }
-
-            .services-columns {
-                flex-direction: column;
-            }
-
-            .service {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .split-section {
-                flex-direction: column;
-                padding: 40px 20px;
-            }
-
-            .left-column, .right-column {
-                padding: 0;
-                width: 100%;
-            }
-
-
-            .cta-section .section-title {
-                font-size: 32px;
-            }
-            
-
-    .cta-image {
-    text-align: center; /* Center the image */
-    width: 100%; /* Ensure container is full width */
-}
-
-.cta-image img {
-    width: 100%; /* Make the image take full width of its container */
-    max-width: 100%; /* Set a reasonable maximum width for larger screens */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 10px;
-}
-
- .footer {
-                padding: 20px;
-                font-size: 16px;
-            }
-   
-    .footer p {
-        white-space: normal; /* Allow wrapping */
-        text-align: center;
-        display: flex;
-        flex-direction: column; /* Stack email and phone vertically */
-        align-items: center;
-    }
-
-    .footer a {
-        margin-bottom: 5px; /* Add some space between the links */
-    }
-}
-
+        footer a {
+            color: #f4f1ed;
+            text-decoration: none;
+        }
     </style>
 </head>
+
 <body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="HIJK Logo 5000.png" alt="HIJK Property Group Logo">
+    </div>
 
-   <!-- Unified section for Header and Hero -->
-    <div class="unified-section">
-        <!-- Header Section -->
-        <div class="header">
-            <img src="HIJK Logo 5000.png" alt="Company Logo" class="logo">
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="main-lines">
+            <p>HIJK Property Group buys, adds value and sells properties.</p>
+            <p>We buy As-Is properties, helping home owners solve tricky situations. We add value to those properties through renovations or new builds and sell at a profit.</p>
+            <p>Our partners will buy the properties directly from us and do the work themselves, or we work together and share the profits.</p>
+        </div>
+
+        <!-- Two Columns -->
+        <div class="two-columns">
+            <!-- Left Column -->
+            <div class="column">
+                <h2>For Homeowners</h2>
+                <p>HIJK helps distressed homeowners turn their properties into cash quickly, providing financial relief, an easy exit, and a fresh start.</p>
+                <ul>
+                    <li>💰 <strong>Financial Relief:</strong> We provide fair cash offers to help alleviate your financial burdens.</li>
+                    <li>🏚️ <strong>No Repairs Needed:</strong> Sell your property as-is; no need for costly repairs or renovations.</li>
+                    <li>⏳ <strong>Quick Process:</strong> Experience a streamlined and hassle-free selling process.</li>
+                    <li>🤝 <strong>Compassionate Support:</strong> We understand your situation and are here to help you through every step.</li>
+                </ul>
+                <h3>How It Works</h3>
+                <ol>
+                    <li>Fill Out The Form</li>
+                    <li>Accept Our Offer</li>
+                    <li>Close The Deal</li>
+                </ol>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <h2>For Investors</h2>
+                <p><strong>Our Focus:</strong> Off-Market Properties</p>
+                <p>At HIJK, we focus on one thing: finding the best properties possible off-market.</p>
+                <p><strong>Our Niche:</strong> Short-Term Gains</p>
+                <p>Our expertise lies in single-family off-market properties that offer high potential for short-term gains.</p>
+                <p><strong>Tailored to Your Needs:</strong> While long-term holds aren’t our primary focus, if that’s what you’re after, we’ll find opportunities for you.</p>
+                <p><strong>Trust and Transparency:</strong> At HIJK, strategy leads the way, and trust is the foundation.</p>
             </div>
         </div>
-
-        <!-- Hero Section -->
-        <div class="hero-section">
-            <h1 class="hero-title">1. Access Lucrative Off-Market Properties</h1>
-            <h1 class="hero-title">2. Sell Your Distressed, As-Is Property for Cash</h1>
-            <h2 class="hero-subtitle">TRUST. VALUE. LEVERAGE</h2>
-            <div class="hero-text">
-                <h3>HIJK Property Group seeks properties in As-Is condition, ready for an investment and provides access to exclusive properties off-market, thorough due diligence, and market expertise.</h3>
-            </div>
-            <br><br>
-            <a href="mailto:info@buildwithbig.ca" class="cta-button">Sell Your Property to HIJK</a>
-            <br>
-            <a href="mailto:info@buildwithbig.ca" class="cta-button">Let’s Find Your Next HIJK Investment</a>
-
-        </div>
     </div>
-
-
-  <!-- Section 1: Strategy and Trust - Story Layout with Icons -->
-<div class="section">
-    <h2 class="section-title" style="font-size: 42px; font-weight: bold; background-color: #2C6183; color: white; padding: 20px; border-radius: 10px; display: inline-block;">Strategy and Trust Are Our Foundation</h2>
-    <!-- Block 1: Intro - Focus Icon -->
-    <div class="story-block">
-        <h3 class="story-title">Our Focus: Off-Market Properties</h3>
-        <p class="section-body">At HIJK, we focus on one thing: finding the best properties possible off-market. We take a strategic approach to understand exactly what you, the investor, are looking for. Once we know your goals, we find the perfect match for your investment strategy.</p>
-    </div>
-    
-    <!-- Block 2: Our Niche - Growth Icon -->
-    <div class="story-block">
-        <h3 class="story-title">Our Niche: Short-Term Gains</h3>
-        <p class="section-body">Our expertise lies in single-family off-market properties that offer high potential for short-term gains. Whether it's a fix-and-flip or a tear-down and rebuild, we specialize in quick returns—often within a year—maximizing your investment’s value.</p>
-    </div>
-    
-    <!-- Block 3: Tailored to Your Needs - Custom Icon -->
-    <div class="story-block">
-        <h3 class="story-title">Tailored to Your Needs</h3>
-        <p class="section-body">While long-term holds aren’t our primary focus, if that’s what you’re after, we’ll use our deep expertise to find those opportunities for you. Our niche focus allows us to grow a strong network of connections, bringing the best properties directly to us—and to you.</p>
-    </div>
-    
-    <!-- Block 4: Transparency and Trust - Trust Icon -->
-    <div class="story-block">
-        <h3 class="story-title">Trust and Transparency</h3>
-        <p class="section-body">At HIJK, strategy leads the way, and trust is the foundation. With full transparency at every step, you can be confident that your investments are in good hands, from first interaction to final execution.</p>
-    </div>
-    
-    <!-- Call to Action Button -->
-    <br>
-    <a href="mailto:info@buildwithbig.ca" class="cta-button" style="display: inline-block; margin-top: 40px;">Build Your Legacy with HIJK</a>
-</div>
-
-     <!-- Section 2: The HIJK Method -->
-    <div class="method-section">
-        <!-- Left side with points 1, 2, 3 -->
-        <div class="method-left">
-            <h3>1. Find the Play</h3>
-            <p>We tap into our network to uncover high-potential, off-market properties that no one else is accessing.</p>
-            <h3>2. Curated Analysis</h3>
-            <p>Based on our agreed strategy, we do the heavy lifting to evaluate every aspect of your deal.</p>
-            <h3>3. Deliver Results</h3>
-            <p>From fast flips to long-term rentals, we handle the execution with clear communication, maximizing value and minimizing stress.</p>
-        </div>
-
-        <!-- Right side with the title -->
-        <div class="method-right">
-            <h2>The HIJK Method: Simple. Powerful. Repeatable</h2>
-        </div>
-    </div>
-
-    <!-- Section 3: Our Services -->
-<div class="services-section">
-    <h2 class="section-title services-title">3 Approaches to Meet Your Needs</h2>
-    <div class="services-columns">
-        <div class="service">
-            <h3 class="service-title">Acquisitions</h3>
-            <p class="service-body">We find the best property for you to aquire, and you manage the process from there - whether you decide to flip it or keep as a long-term rental. Get access to deals others can't.</p>
-        </div>
-        <div class="service">
-            <h3 class="service-title">Equity Partnerships</h3>
-            <p class="service-body">We partner on any number of the properties we find. We'll manage the build and flip. We'll split the profits - all hassle-free.</p>
-        </div>
-        <div class="service">
-            <h3 class="service-title">Long-Term Investments</h3>
-            <p class="service-body">If you desire to hold and keep long term, we'll manage the property - providing steady cash flow over time.</p>
-        </div>
-    </div>
-    <br>
-    <a href="mailto:info@buildwithbig.ca" class="cta-button" style="display: inline-block; margin-top: 40px;">Choose Your Investment Path</a>
-</div>
-
-   <!-- Section 4: Challenges and Solutions Split-Screen -->
-<div class="split-section" style="display: flex; justify-content: space-between; padding: 80px 20px; background-color: #F5F5F5;">
-    <!-- Left Column: Challenges -->
-    <div class="left-column" style="flex: 1; padding-right: 40px;">
-        <h2 class="challenges-title" style="font-size: 42px; color: #333; font-weight: bold; margin-bottom: 30px;">We Have the Investments to Match Your Goals</h2>
-        <p style="font-size: 20px; color: #555; line-height: 1.8; margin-bottom: 20px;">Investing in real estate poses multiple challenges:</p>
-        <ul class="value-list" style="list-style-type: none; padding: 0; font-size: 20px; color: #555; line-height: 1.8; margin-bottom: 30px;">
-            <li class="value-item" style="margin-bottom: 20px;"><span class="bold" style="color: #CA6F00; font-weight: bold;">Limited access</span> to high-value, off-market investments.</li>
-            <li class="value-item" style="margin-bottom: 20px;"><span class="bold" style="color: #CA6F00; font-weight: bold;">Lack of time</span> to source or manage investment opportunities.</li>
-            <li class="value-item" style="margin-bottom: 20px;"><span class="bold" style="color: #CA6F00; font-weight: bold;">Limited market knowledge</span> to thoroughly evaluate and execute on.</li>
-        </ul>
-        <p style="font-size: 20px; color: #555; line-height: 1.8;">At <strong>HIJK Property Group</strong>, we eliminate these hurdles. We offer exclusive access to off-market opportunities, expertly manage the entire process from due diligence to execution, and align every investment with your financial goals, so you can invest with confidence.</p>
-    </div>
-
-    <!-- Right Column: Solutions -->
-    <div class="right-column" style="flex: 1; padding-left: 40px; background-color: #E0E0E0; border-radius: 10px; padding: 40px;">
-        <p style="font-size: 20px; color: #333; line-height: 1.8; margin-bottom: 20px;">Our approach is built on <span class="bold" style="color: #CA6F00; font-weight: bold;">simplicity</span>, <span class="bold" style="color: #CA6F00; font-weight: bold;">deep expertise</span>, and <span class="bold" style="color: #CA6F00; font-weight: bold;">results-driven execution</span>. We carefully curate each opportunity based on comprehensive market analysis, eliminating the guesswork.</p>
-        <p style="font-size: 20px; color: #333; line-height: 1.8;">Whether you're looking for quick flips or long-term investments, our method ensures steady, reliable growth for your portfolio—all without the stress.</p>
-        <h3 class="subheading" style="font-size: 24px; color: #333; margin-top: 40px; font-weight: bold;">With our network and expertise, your success is our mission.</h3>
-    </div>
-</div>
-
-  <!-- Section 5: How We Create Value - Split-Screen with White Box Behind Title -->
-<div class="split-section" style="display: flex; justify-content: space-between; padding: 80px 20px; background-color: #2C6183; color: white;">
-    <!-- Left Column: Title with White Box -->
-    <div class="left-column" style="flex: 1; padding-right: 40px;">
-        <h2 class="section-title" style="font-size: 42px; font-weight: bold; background-color: white; color: #2C6183; padding: 20px; border-radius: 10px; display: inline-block;">How We Create Value</h2>
-    </div>
-
-    <!-- Right Column: Value Points -->
-    <div class="right-column" style="flex: 1; padding-left: 40px;">
-        <p style="font-size: 20px; line-height: 1.8; margin-bottom: 20px;">
-            <span class="bold" style="color: #CA6F00; font-weight: bold;">Off-Market Expertise:</span> We find hidden, high-potential off-market properties and deliver exclusive, wholesale opportunities directly to you.
-        </p>
-        <p style="font-size: 20px; line-height: 1.8; margin-bottom: 20px;">
-            <span class="bold" style="color: #CA6F00; font-weight: bold;">Strategic Investor Alignment:</span> We tailor every opportunity to fit your financial goals, whether you’re after fast returns or long-term investments.
-        </p>
-        <p style="font-size: 20px; line-height: 1.8; margin-bottom: 20px;">
-            <span class="bold" style="color: #CA6F00; font-weight: bold;">Developer Collaborations:</span> Through partnerships with developers, we turn bold visions into reality, built on trust, transparency, and shared success.
-        </p>
-    </div>
-</div>
-
-    <!-- Section 6: Call to Action -->
-    <div class="cta-section">
-        <div class="cta-image" style="text-align: center; margin-bottom: 40px;">
-        <img src="pexels-ninobur-17602526.jpg" alt="BIG Move Image" style=height: auto; border-radius: 10px;">
-    </div>
-        <h2 class="section-title">Your Next HIJK Starts Here</h2>
-    </div>
-</div>
-
 
     <!-- Footer -->
-    <div class="footer">
-        <p>Make your move. Contact us at <a href="mailto:info@buildwithbig.ca">info@buildwithbig.ca</a>
-        <p>© 2024 HIJK Property Group All rights reserved.</p>
-    </div>
+    <footer>
+        <p>HIJK Property Group | Contact us at <a href="mailto:info@hijkproperties.ca">info@hijkproperties.ca</a> or call 403.701.5759</p>
+    </footer>
 </body>
+
 </html>

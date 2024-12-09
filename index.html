@@ -16,6 +16,11 @@
             padding: 0;
         }
 
+        h1, h2, h3 {
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
         /* Hero section */
         .hero {
             display: flex;
@@ -24,23 +29,40 @@
             justify-content: center;
             height: 100vh;
             text-align: center;
+            background: linear-gradient(135deg, #e0d6c7, #f4f1ed);
+            padding: 20px;
         }
 
         .hero img {
             max-width: 400px;
             width: 100%;
             height: auto;
+            margin-bottom: 20px;
         }
 
+        /* Main Content */
         .main-content {
-            padding: 10px;
+            padding: 20px;
         }
 
         .main-lines {
             text-align: center;
             font-size: 1.2rem;
-            line-height: 1.6;
+            line-height: 1.8;
             margin-bottom: 50px;
+        }
+
+        .main-lines h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .main-lines h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: normal;
+            line-height: 1.6;
         }
 
         /* Two-column section */
@@ -66,20 +88,27 @@
             background-color: #e0d6c7;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .column:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .column h2 {
             font-size: 1.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4a412f;
+            padding-bottom: 5px;
         }
 
         .column p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             line-height: 1.6;
         }
 
-        .column ul,
-        .column ol {
+        .column ul, .column ol {
             padding: 0;
             list-style: none;
         }
@@ -101,11 +130,16 @@
             padding: 20px;
             background-color: #4a412f;
             color: #f4f1ed;
+            border-top: 5px solid #e0d6c7;
         }
 
         footer a {
             color: #f4f1ed;
             text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -119,9 +153,9 @@
     <!-- Main Content -->
     <div class="main-content">
         <div class="main-lines">
-            <H1>HIJK Property Group: Buying, Transforming, Selling.</H1>
-            <H2>We purchase properties as-is, solving tough situations for homeowners. Through renovations or new builds, we add value and unlock potential.</H2>
-            <H2>Partners can buy properties directly from us or collaborate to share profits and success.</H2>
+            <h1>HIJK Property Group: Buying, Transforming, Selling.</h1>
+            <h2>We purchase properties as-is, solving tough situations for homeowners. Through renovations or new builds, we add value and unlock potential.</h2>
+            <h2>Partners can buy properties directly from us or collaborate to share profits and success.</h2>
         </div>
 
         <!-- Two Columns -->
@@ -130,14 +164,10 @@
             <div class="column">
                 <h2>For Homeowners</h2>
                 <p>At HIJK, we understand that selling your home can be stressful, especially during challenging times. That’s why we’re here to provide a simple, fast, and compassionate solution. We help distressed homeowners turn their properties into cash quickly, offering financial relief, a smooth exit, and the opportunity for a fresh start.</p>
-                <p><strong>💰 Financial Relief</strong></p>
-                <p>Get a fair cash offer for your property without the hassle of traditional selling.</p>
-                <p><strong>🏚️ Sell As-Is</strong></p>
-                <p>No need to worry about repairs or renovations—we buy your property in its current condition.</p>
-                <p><strong>⏳ Fast and Simple Process</strong></p>
-                <p>Our streamlined approach ensures a quick sale.</p>
-                <p><strong>🤝 Compassionate Support</strong></p>
-                <p>We’re here to guide you every step of the way.</p>
+                <p><strong>💰 Financial Relief:</strong> Get a fair cash offer for your property without the hassle of traditional selling.</p>
+                <p><strong>🏚️ Sell As-Is:</strong> No need to worry about repairs or renovations—we buy your property in its current condition.</p>
+                <p><strong>⏳ Fast and Simple Process:</strong> Our streamlined approach ensures a quick sale.</p>
+                <p><strong>🤝 Compassionate Support:</strong> We’re here to guide you every step of the way.</p>
                 <h3>How It Works</h3>
                 <ol>
                     <li><strong>Tell Us About Your Home:</strong> Fill out our form with details about your property. We’ll prepare a competitive cash offer.</li>
@@ -150,14 +180,10 @@
             <div class="column">
                 <h2>For Investors</h2>
                 <p>At HIJK Property Group, we specialize in connecting investors with high-value opportunities that deliver results. Our strategic focus, niche expertise, and commitment to transparency make us the ideal partner for your real estate investment journey.</p>
-                <p><strong>🎯 Our Focus: Off-Market Properties</strong></p>
-                <p>We excel at identifying and securing the best off-market deals. These exclusive opportunities give you a competitive edge.</p>
-                <p><strong>💡 Our Niche: Short-Term Gains</strong></p>
-                <p>Our expertise lies in single-family properties with high potential for short-term returns. Whether it’s a fix-and-flip or a tear-down and rebuild, we’re committed to helping you realize significant gains, often within a year.</p>
-                <p><strong>📌 Tailored to Your Investment Goals</strong></p>
-                <p>Your goals are unique, and so is our approach. While short-term gains are our specialty, we also find opportunities that align with your specific investment strategy.</p>
-                <p><strong>🤝 Trust and Transparency</strong></p>
-                <p>Your success is built on a foundation of trust. At HIJK, we prioritize transparency, ensuring you have all the support you need.</p>
+                <p><strong>🎯 Our Focus: Off-Market Properties:</strong> We excel at identifying and securing the best off-market deals. These exclusive opportunities give you a competitive edge.</p>
+                <p><strong>💡 Our Niche: Short-Term Gains:</strong> Our expertise lies in single-family properties with high potential for short-term returns. Whether it’s a fix-and-flip or a tear-down and rebuild, we’re committed to helping you realize significant gains, often within a year.</p>
+                <p><strong>📌 Tailored to Your Investment Goals:</strong> Your goals are unique, and so is our approach. While short-term gains are our specialty, we also find opportunities that align with your specific investment strategy.</p>
+                <p><strong>🤝 Trust and Transparency:</strong> Your success is built on a foundation of trust. At HIJK, we prioritize transparency, ensuring you have all the support you need.</p>
             </div>
         </div>
     </div>
